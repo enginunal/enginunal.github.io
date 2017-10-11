@@ -6,7 +6,7 @@ Bu sayfada yazılım dünyası ve yapay zeka ve yenilikler ile ilgili konularda 
 Konulara göre yazılarım :
 
 
-## Yapay Zeka
+### Yapay Zeka
 * [Yapay Zeka Öğrenme Teknikleri - Giriş](https://enginunal.github.io/YapayZekaOgrenmeTeknikleri)
 * [LUIS - The Language Understanding Intelligence Service](https://enginunal.github.io/LUIS)
 * [Custom Vision AI Service](https://enginunal.github.io/CustomVisionAI)
