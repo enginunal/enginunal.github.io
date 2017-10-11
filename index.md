@@ -10,6 +10,7 @@ Konulara göre yazılarım :
 * [Yapay Zeka Öğrenme Teknikleri - Giriş](https://enginunal.github.io/YapayZekaOgrenmeTeknikleri)
 * [LUIS - The Language Understanding Intelligence Service](https://enginunal.github.io/LUIS)
 * [Custom Vision AI Service](https://enginunal.github.io/CustomVisionAI)
+* [Discriminative ve Generative Modeller](https://enginunal.github.io/DiscriminativeVeGenerative)
 
 
 
