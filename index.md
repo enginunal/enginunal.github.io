@@ -1,12 +1,19 @@
-## Hoşgeldiniz
+# Hoşgeldiniz
 
-Bu sayfada yazılım dünyası ve yapay zeka konularıyla ilgili Türkçe yazılarımı bulabilirsiniz. 
+Bu sayfada yazılım dünyası ve yapay zeka ve yenilikler ile ilgili konularda Türkçe yazılarımı bulabilirsiniz. 
 
 
 Konulara göre yazılarım :
 
-### Yapar Zeka
+
+## Yapay Zeka
 * [Yapay Zeka Öğrenme Teknikleri - Giriş](https://enginunal.github.io/YapayZekaOgrenmeTeknikleri)
+
+
+
+
+
+
 
 
 
