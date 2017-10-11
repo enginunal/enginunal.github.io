@@ -12,7 +12,7 @@ VM’ler büyük ve hantal yapılardır, deploy(yazılım yayınlama) gereken du
 Container, yazılımın paylaşılan bir işletim sisteminde izoleli olarak çalışabilen bir biçimde paketlenmesinin bir yoludur. VM'lerin aksine, container bir işletim sistemi paketlemez; yalnızca yazılımı çalıştırmak için gereken kütüphaneler ve ayarlara ihtiyaç vardır. Bu, yazılımın nerede konuşlandırıldığına bakılmaksızın yazılımın daima aynı şekilde çalışacağını garanti eder.
 Container teknolojisi ile uygulamaların deploy edilmesi çok daha kolay ve VM’e göre çok çok hızlıdır. Continuous Integration gibi yazılım geliştirme süreçlerinde geliştiricilerin otomasyona bağladığı derleme ve test süreci sonrasında yayın süreci gelmektedir, yayın(deployment) sürecinin sorunsuz gerçekleşmesi çok önemlidir. Üretilen ve test edilen bir yazılımın kullanıcının deneyimine sunulma aşamasında kullanıcının işlerini kesintiye uğratmadan deployment tamamlanmalı ve bu işlemler hatasız gerçekleşmelidir. Container’lar bu alanda da önemli kolaylık getirmiştir ve kullanımları yaygınlaşmaktadır.
 
-Bu konuyla ilgili daha detay için : [](https://www.docker.com/what-docker#/overview)
+Bu konuyla ilgili daha detay için : https://www.docker.com/what-docker#/overview/
 
 
 ## Docker
@@ -25,7 +25,7 @@ Docker, yukarıda anlattığım container paltformu geliştiricisi bir firmadır
 
 Docker denemelerinizi yapmanın en kolay yolu yine Docker’ın açık kaynaklı projesi kitematic uygulamasıdır. Bu uygulama ile görsel arabirim kullanarak ve herhangi bir komut yazma gereği olmadan Docker engine kurabilir ve container indirip kullanabilirsiniz. Uygulamanın sitesinden Docker Toolbox indirerek işleme başlıyoruz.
 
-Kitematic sitesi : [](https://kitematic.com/)
+Kitematic sitesi : https://kitematic.com/
 
 ![image](https://3.bp.blogspot.com/-rf9t0pMDjXo/WdzjPhwu3iI/AAAAAAAAAZ4/sKRrkV79o34yYxn1d2AhHnshCouVFxXowCK4BGAYYCw/s1600/1.jpg)
 
@@ -54,7 +54,7 @@ Docker Quickstart Terminal’i başlatıyoruz ve gereken ayarlamaları uygulama 
 Bilgisayarınızın BIOS ayarlarından VT-X/AMD-v tanımlarını aktif yapmanız gerekir.
 Bununla ilgili bir yazı:
 
-[](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/)
+https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/
 
 
 Devamında işlemler tamamlandıktan sonra Kitematic uygulamasını açıyoruz ve docker hesabımızla giriş yapıyoruz.
@@ -103,7 +103,7 @@ Kitematic uygulamasından New ile yeni bir container arama sayfası açarak mong
 Böylece mongodb documentdb container’ımız kullanıma hazır. Devamında çalışan mongodb veritabanımıza veri eklemek ve incelemek isteyeceğiz.
 Bunun en kolay yolu MongoDB Compass uygulaması ile yapmak olacaktır.
 
-Uygulamanın adresi : [](https://www.mongodb.com/products/compass)
+Uygulamanın adresi : https://www.mongodb.com/products/compass/
 
 MongoDB Compass uygulamasını indirip açılışta bize sorulan IP adresi ve Port bilgilerini container’ımızdaki değerler olarak giriyoruz. Bu örnekte IP adresi 192.168.99.100 ve port 32769 olarak geçmekte yani bu değerler MongoDB Compass login ekranına girilir.
 
@@ -125,7 +125,7 @@ Bu noktaya gelene kadar gayet kolay araçlar ile hiç komut satırı veya kodlam
 Bu container’a C# ile erişen ve veri alıp atan bir kod örneğini github repository olarak yayınladım meraklı arkadaşlar inceleyebilirler.
 
 
-Github repository : [](https://github.com/enginunal/MongoDBSimpleSample)
+Github repository : https://github.com/enginunal/MongoDBSimpleSample/
 
 
 
