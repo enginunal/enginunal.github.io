@@ -29,10 +29,16 @@ Eldeki verinin sınıflandırılması veya kategorize edilmesi amacıyla kullan�
 Binary classification algoritmasını ele alırsak, bu model ile eldeki veriler 1 ya da 0 olarak sınıflandırır ve bu iki durumdan hangisine uyduğunu belirleyebiliriz. 1 ya da 0 olma kararı bir eşik(threshold) yardımıyla alınır. Eşik değerinden düşük olan veriler 0, eşik değerinden büyükler ise 1 olarak sınıflandırılır.
 Supervised learning tekniğinde modelin öngörüleri eldeki verilerle test edilir ve modelin geçerliliği ve performansı sınanmış olur. Binary Classification modelinin tahminleri test verisi ile kıyaslandığında:
 
+
 Model 1 olarak tahmin etmiş ve test verisi 1 ise : Doğru Pozitif (True Positive)(TP)
+
 Model 0 olarak tahmin etmiş ve test verisi 0 ise : Doğru Negatif (True Negative)(TN)
+
 Model 1 olarak tahmin etmiş ve test verisi 0 ise : Yanlış Pozitif (False Positive)(FP)
+
 Model 0 olarak tahmin etmiş ve test verisi 1 ise : Yanlış Negatif (False Negative)(FN)
+
+
 
 Elde edilen bu TP,TN,FP,FN sayıları ile Confusion Matrix ismi verilen bir matriks oluşturulur ve sınıflandırma modelimizin performansının hesaplanmasında kullanılacaktır. Confusion Matrix veya Contingency Table da denilmektedir, amacı olasılıkların bir tabloda gösterilmesidir.
 
@@ -57,6 +63,7 @@ Presicion = TP / (TP + FP)
 **Recall** : Çağırma. Diğer adıyla Duyarlılık veya TPR(True Positive Rate)(Gerçek Olumlu Oran). Sınıflandırıcının yaptığı olumlu tahminlerin hangi kısmı kesin olarak doğru bu durumu bulmak için kullanılır. Bir başka deyişle, olumlu tahminlerin sayısının, test verilerindeki pozitif sınıflandırılan değer sayısına bölünmesidir.
 
 Recall = TP / (TP + FN)
+
 
 
 Recall daha önce de belirttiğim gibi True Positive Rate ismiyle de geçer, bunun yanında benzer bir oranlama hesabı daha vardır o da False Positive Rate. FPR ise olumsuz tahminlerin oran hesaplanmasında kullanılır. TPR ve FPR ikisi ROC(Receiver Operating Characteristic) eğrisi denilen bir eğirinin çizilmesinde kullanılır.TPR ve FPR formülleri:
