@@ -8,7 +8,7 @@ Konulara göre yazılarım :
 
 ## Yapay Zeka
 * [Yapay Zeka Öğrenme Teknikleri - Giriş](https://enginunal.github.io/YapayZekaOgrenmeTeknikleri)
-
+* [LUIS - The Language Understanding Intelligence Service](https://enginunal.github.io/LUIS)
 
 
 
