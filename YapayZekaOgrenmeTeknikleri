@@ -1,7 +1,7 @@
-#Yapay Zeka Öğrenme Teknikleri - Giriş
+# Yapay Zeka Öğrenme Teknikleri - Giriş
 
 
-###Supervised Learning
+### Supervised Learning
 
 Denetimli Öğrenme olarak ta dilimize çevrilebilir. Seçeceğimiz öğrenme algoritmamıza modelleme yapabileceği yeterlilikte verinin ve bu veriden ulaşılmaya çalışılan sonucun verilmesi gerekir. Algoritmamız eldeki veriyi ve bu verinin sonucunu kullanarak bir model geliştirir. Geliştirilen bu modelin geçerliliğini ve hata oranlarını bilebilmek için elimizdeki veri ve sonuçları ile sınarız.
 Eldeki hazır veri seti kullanılarak geliştirilmiş ve sonrasında test verisi ile geçerliliği sınanmış modelimizin yeni gelecek veriden doğru tahmini sonuç çıkarması bazı kriterlere bağlıdır. Doğru modelleme yapılmamışsa çıkacak sonuçlar da gerçek durumdan uzak olacaktır. Dikkat edilmesi gereken kriterler öğrenme algoritması seçimi, verinin gerçek durumu ne kadar yansıttığı, test verisinin ne kadar doğru seçildiği ve hazırlandığı(bu konu çok önemli ve uzun bir konudur) gibi.
