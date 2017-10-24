@@ -62,7 +62,7 @@ Gerçekleşmesi beklenen olaylar bağımlı ise bu olayların ortak olasılığ�
 
 <code>P(A ve B) = P(A) * P(B|A)</code>  
 
-Koşullu Olasılık : Bir olayın gerçekleştiği bilindiğinde diğerinin gerçekleşme olasılığına koşullu olasılık denir. Örneğin B bilindiğinde A olayının koşullu olasılığı : P(A|B) olarak ifade edilir.  
+Koşullu Olasılık : Bir olayın gerçekleştiği bilindiğinde diğerinin gerçekleşme olasılığına koşullu olasılık denir. Örneğin B bilindiğinde A olayının koşullu olasılığı <code>P(A|B)</code> olarak ifade edilir.  
 
 
 Örnek: Sınıfta 12 erkek ve 18 kız öğrenci var. Öğretmen sınıf listesinden rasgele iki öğrenci işaretliyor. Bu iki öğrencinin de kız olma olasılığı nedir?  
