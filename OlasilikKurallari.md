@@ -11,7 +11,7 @@ Olasılık kurallarının isimlendirmelerini kolay anlaşılması amacıyla bira
 ### Toplama Kuralı
 Aynı anda gerçekleşmeyen(olasılıkları kesişmeyen/ayrık)(mutually exclusive) olayların toplam gerçekleşme olasılığı, her olayın gerçekleşme olasılıklarının toplamına eşittir.  
 
-P(A veya B) = P(A) + P(B)  
+<code>P(A veya B) = P(A) + P(B)</code>  
 
 Örnek: Elimize bir zar olsun. Zarı attığımızda 2 veya 5 gelme olasılığı nedir?  
 
