@@ -24,7 +24,7 @@ P(2 veya 5) = 1/6 + 1/6 = 1/3 çıkar.
 ### Ortaklı Toplama Kuralı
 Olaylar birlikte de gerçekleşebiliyorsa(olasılıkları kesişiyorsa)(non-mutually exclusive) diğer ifadeyle ortak olasılık olduğu durumlar varsa kullanılır.  
 
-P(A veya B) = P(A) + P(B) - P(A ve B)  
+<code>P(A veya B) = P(A) + P(B) - P(A ve B)</code>  
 
 Örnek: Bir sınıfta 17 erkek ve 13 kız toplam 30 öğrenci olsun. Sınavda 4 erkek ve 5 kız tam not A aldı. Sınıftan rasgele bir öğrenci seçtiğimizde bunun kız öğrenci veya A alan öğrenci olma olasılığı nedir?  
 
@@ -35,7 +35,7 @@ P(Kız veya A) = 13/30 + 9/30 – 5/30 = 17/30 sonucunu verir.
 ### Bağımsız Çarpma Kuralı
 Bağımsız olayların(olayın gerçekleşmesi diğerinin gerçekleşmesini etkilemiyorsa) gerçekleşme olasılığı, bu olasılıkların çarpımına eşittir.  
 
-P(A ve B) = P(A) * P(B)  
+<code>P(A ve B) = P(A) * P(B)</code>  
 
 Örnek: Elimizde bir bozuk para ve bir zar olsun. İkisini de aynı anda atalım. Paranın tura gelme ve zarın 3 gelme olasılığını hesaplayalım.  
 
@@ -60,7 +60,7 @@ P(1. Ve 2. ve 3. Öğrenci pizzasever) = 9/10 * 9/10 * 9/10 = 729/1000 bulunur.
 ### Bağımlı Çarpma Kuralı
 Gerçekleşmesi beklenen olaylar bağımlı ise bu olayların ortak olasılığını hesaplamakta kullanılır.  
 
-P(A ve B) = P(A) * P(B|A)  
+<code>P(A ve B) = P(A) * P(B|A)</code>  
 
 Koşullu Olasılık : Bir olayın gerçekleştiği bilindiğinde diğerinin gerçekleşme olasılığına koşullu olasılık denir. Örneğin B bilindiğinde A olayının koşullu olasılığı : P(A|B) olarak ifade edilir.  
 
@@ -78,7 +78,7 @@ P(Hatalı1 ve Hatalı3 ve Hatalı3) = 3/20 * 2/19 * 1/18 = 6/6840 bulunur.
 ### Koşullu Olasılık
 Her iki olay da birbirine bağımlı ise ve birinin gerçekleşme olasılığı diğerini de etkilemekteyse önceki konuda tanımını verdiğim koşullu olasılık formulünü kullanırız.  
 
-P(B|A) = P(A ve B) / P(A)  
+<code>P(B|A) = P(A ve B) / P(A)</code>  
 
 Örnek: Bir matematik öğretmeni sınıfa iki test verdi. Sınıfın %25'i her iki testten de geçti ve sınıfın %42'si ilk testi geçti. İlk sınava girenlerin yüzde kaçı ikinci sınavı geçti?  
 
