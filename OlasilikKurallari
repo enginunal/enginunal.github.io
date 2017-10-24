@@ -1,4 +1,6 @@
-Olasılık Kuralları
+[Ana Sayfa](https://enginunal.github.io/)
+
+# Olasılık Kuralları
 
 
 Olasılık kuralları, temel olasılık konularına giriş ve olasılık içeren olaylara yaklaşım açısından bilinmesi gereken temel kurallardır. Bu yazıda olasılık kuralları ile ilgili temel bilgiler vermeye çalışacağım. Olasılık konusu elbette derin ve matematiksel olarak detayları çok bir konudur, fakat benim üzerinde durmak istediğim özellikle giriş seviyesinde bir bakış açısı sağlamaya yardımcı olmaktır. 
@@ -6,7 +8,7 @@ Bu yazıda veya diğer yazılarımda matematiksel detaylara girip konuyu içinde
 Olasılık kurallarının isimlendirmelerini kolay anlaşılması amacıyla biraz farklılaştırdım, bence bu şekildeki isimlendirmeler akılda kalıcı oluyor. Kuralları kısaca özetleyip örneklerle pekiştirmeye çalışacağım. Daha net anlamak için farklı kaynakları ve tanımları incelemenizi özellikle öneririm.
 
 
-Toplama Kuralı
+### Toplama Kuralı
 Aynı anda gerçekleşmeyen(olasılıkları kesişmeyen/ayrık)(mutually exclusive) olayların toplam gerçekleşme olasılığı, her olayın gerçekleşme olasılıklarının toplamına eşittir.
 P(A veya B) = P(A) + P(B)
 
@@ -17,7 +19,7 @@ P(2 veya 5) = P(2) + P(5)
 P(2 veya 5) = 1/6 + 1/6 = 1/3 çıkar
 
 
-Ortaklı Toplama Kuralı
+### Ortaklı Toplama Kuralı
 Olaylar birlikte de gerçekleşebiliyorsa(olasılıkları kesişiyorsa)(non-mutually exclusive) diğer ifadeyle ortak olasılık olduğu durumlar varsa kullanılır.
 P(A veya B) = P(A) + P(B) - P(A ve B)
 
@@ -26,7 +28,7 @@ P(Kız veya A) = P(Kız) + P(A) – P(Kız ve A)
 P(Kız veya A) = 13/30 + 9/30 – 5/30 = 17/30 sonucunu verir.
 
 
-Bağımsız Çarpma Kuralı
+### Bağımsız Çarpma Kuralı
 Bağımsız olayların(olayın gerçekleşmesi diğerinin gerçekleşmesini etkilemiyorsa) gerçekleşme olasılığı, bu olasılıkların çarpımına eşittir.
 P(A ve B) = P(A) * P(B)
 
@@ -47,7 +49,7 @@ P(3. Öğrenci pizzasever) = 9/10
 P(1. Ve 2. ve 3. Öğrenci pizzasever) = 9/10 * 9/10 * 9/10 = 729/1000 bulunur.
 
 
-Bağımlı Çarpma Kuralı
+### Bağımlı Çarpma Kuralı
 Gerçekleşmesi beklenen olaylar bağımlı ise bu olayların ortak olasılığını hesaplamakta kullanılır.
 P(A ve B) = P(A) * P(B|A)
 
@@ -62,7 +64,7 @@ P(Hatalı1 ve Hatalı3 ve Hatalı3) = P(Hatalı1) *
 3/20 * 2/19 * 1/19 = 6/6840 bulunur.
 
 
-Koşullu Olasılık
+### Koşullu Olasılık
 Her iki olay da birbirine bağımlı ise ve birinin gerçekleşme olasılığı diğerini de etkilemekteyse önceki konuda tanımını verdiğim koşullu olasılık formulünü kullanırız.
 
 P(B|A) = P(A ve B) / P(A)
