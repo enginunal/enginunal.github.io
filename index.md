@@ -20,6 +20,8 @@ Konulara göre yazılarım :
 
 ### Matematik
 * [Olasılık Kuralları](https://enginunal.github.io/OlasilikKurallari)
+* [Bayes Teoremi](https://enginunal.github.io/BayesTeoremi)
+
 
 
 
