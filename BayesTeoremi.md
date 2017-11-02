@@ -37,22 +37,24 @@ Yukarıdaki iki denklemi birleştirirsek.
   
 Örnek: Bir araştırmaya göre her 43 çocuktan 1 tanesi, yetişkinlikte ortaya çıkan belli bir hastalığa yakalanmakta ve tam güvenilir olmamasına rağmen yapılan test sonuçlarına göre, hastalıklı bir çocuğun testi %80 pozitif, sağlıklı bir çocuğun testi ise %10 pozitif sonuç vermektedir. Bu bilgilere göre test sonucu pozitif olan bir çocuğun gerçekten hasta olma olasılığı nedir?  
 
-P(A) : Çocuğun hasta olması olasılığı = 1/43  
-P(B) : Testin pozitif çıkması olasılığı = 1/43 * 0.80 + 42/43 * 0.10 = 5/43  
-P(A|B) : Pozitif çıkan testin hastalık çıkma olasılığı ( sorulan bu )  
-P(B|A) : Hastalıklı çocuğun testinin pozitif çıkma olasılığı = 0.80  
-
+<code>P(A)</code> : Çocuğun hasta olması olasılığı = 1/43  
+<code>P(B)</code> : Testin pozitif çıkması olasılığı = 1/43 * 0.80 + 42/43 * 0.10 = 5/43  
+<code>P(A|B)</code> : Pozitif çıkan testin hastalık çıkma olasılığı ( sorulan bu )  
+<code>P(B|A)</code> : Hastalıklı çocuğun testinin pozitif çıkma olasılığı = 0.80  
+  
 <code>P(A|B)=P(B|A)*P(A)/P(B)</code> =>  (0.80 * 1/43)  / (5/43) = 0.16 = %16 bulunur.  
-
+  
+  
   
 Örnek: Ali kaşındığını söylüyor. Kedi alerjisi için bir test var, ancak bu test her zaman doğru değil: Gerçekten alerjisi olan insanlar için, testin "Evet" sonucu vermesi %80 oranında. Alerjisi olmayan insanlar için, testin "Evet" sonucu vermesi %10 oranında ("false positive "). Nüfusun %1'inde alerji varsa ve test "Evet" çıkıyorsa, Ali’nin gerçekten alerji olma olasılığı nedir?  
 
 A: Alerji,  B: Testin Evet çıkması  
-P(A) : Alerji olasılığı = 0.01  
-P(B) : Testin evet çıkma olasılığı = ? (hesaplamamız gerekecek)  
-P(A|B) : Testin evet çıkması durumunda alerji olasılığı = ?? (istenen sonuç)  
-P(B|A) : Alerji olması durumunda testin evet çıkma olasılığı = 0.80   
-
+<code>P(A)</code> : Alerji olasılığı = 0.01  
+<code>P(B)</code> : Testin evet çıkma olasılığı = ? (hesaplamamız gerekecek)  
+<code>P(A|B)</code> : Testin evet çıkması durumunda alerji olasılığı = ?? (istenen sonuç)  
+<code>P(B|A)</code> : Alerji olması durumunda testin evet çıkma olasılığı = 0.80   
+  
+  
 Önce P(B) yi bulalım. Testin evet çıkma olasılığını alerjisi olan ve olmayanlar için yani tüm nüfus için hesaplayacağız.  
 
 P(B) = 0.01 * 0.80 + 0.99 * 0.10 = 0.107 bulduk.   
