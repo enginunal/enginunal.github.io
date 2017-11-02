@@ -11,9 +11,9 @@ Bayes teoremi, 18. yüzyıl İngiliz matematikçisi Thomas Bayes'in adını verd
 ![image](https://2.bp.blogspot.com/-EfO3nX2Zp50/WfsDvW0z-OI/AAAAAAAAAbg/1VU_cCEzA_0K5E4hXgXuQSaNtl9_x9HEwCK4BGAYYCw/s1600/formula.jpg)
 
 
-P(A|B)  = B olayı gerçekleştiğinde A olayının gerçekleşme olasılığı 
+P(A|B) = B olayı gerçekleştiğinde A olayının gerçekleşme olasılığı 
 P(A) = A olayının gerçekleşme olasılığı 
-P(B|A)  = A olayı gerçekleştiğinde B olayının gerçekleşme olasılığı 
+P(B|A) = A olayı gerçekleştiğinde B olayının gerçekleşme olasılığı 
 P(B) = B olayının gerçekleşme olasılığı 
 
 Şimdi bu formülün nasıl çıkarıldığına bakalım. Koşullu olasılık kuralını kullanacağız. Buna göre: 
