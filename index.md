@@ -25,6 +25,9 @@ Konulara göre yazılarım :
 * [Bayes Teoremi](https://enginunal.github.io/BayesTeoremi)
 
 
+### Tasarım Kalıpları (Design Patterns)
+* [Repository ve Unit Of Work Tasarım Kalıbı ve Uygulanması](https://enginunal.github.io/RepositoryVeUnitOfWork.md)
+
 
 
 
