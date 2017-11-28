@@ -26,7 +26,7 @@ Konulara göre yazılarım :
 
 
 ### Tasarım Kalıpları (Design Patterns)
-* [Repository ve Unit Of Work Tasarım Kalıbı ve Uygulanması](https://enginunal.github.io/RepositoryVeUnitOfWork.md)
+* [Repository ve Unit Of Work Tasarım Kalıbı ve Uygulanması](https://enginunal.github.io/RepositoryVeUnitOfWork)  
 
 
 
@@ -34,8 +34,9 @@ Konulara göre yazılarım :
 
 
 
-
-
+  
+  
+  
 ### Erişim
 
 Soru ve destekleriniz için enginunal@gmail.com adresime email atabilirsiniz. İyi günler.
