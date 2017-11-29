@@ -74,7 +74,7 @@ Kişi modelimiz için DbContext hazırlayalım.
 ```
     public class KisiDbContext : DbContext
     {
-        public virtual DbSet Kisiler { get; set; }
+        public virtual DbSet<Kisi> Kisiler { get; set; }
 
         public KisiDbContext(string nameOrConnectionString) : base(nameOrConnectionString)
         {
@@ -89,14 +89,14 @@ Kişi modelimiz için DbContext hazırlayalım.
     public interface IRepository where TEntity : class
     {
         TEntity Get(int id);
-        IEnumerable GetAll();
-        IEnumerable Find(Expression&gt; predicate);
+        IEnumerable<TEntity> GetAll();
+        IEnumerable<TEntity> Find(Expression<Func<TEntity,bool>> predicate);
 
         void Add(TEntity entity);
-        void AddRange(IEnumerable entities);
+        void AddRange(IEnumerable<TEntity> entities);
 
         void Remove(TEntity entity);
-        void RemoveRange(IEnumerable entities);
+        void RemoveRange(IEnumerable<TEntity> entities);
     }
 ```
 
@@ -104,7 +104,7 @@ Kişi modelimiz için DbContext hazırlayalım.
 Şimdi bu interface implementasyonunu gerçekleştirelim.  
 
 ```
-    public class Repository : IRepository where TEntity : class
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly DbContext Context;
 
@@ -116,37 +116,37 @@ Kişi modelimiz için DbContext hazırlayalım.
 
         public void Add(TEntity entity)
         {
-            Context.Set().Add(entity);
+            Context.Set<TEntity>().Add(entity);
         }
 
-        public void AddRange(IEnumerable entities)
+        public void AddRange(IEnumerable<TEntity> entities)
         {
-            Context.Set().AddRange(entities);
+            Context.Set<TEntity>().AddRange(entities);
         }
 
-        public IEnumerable Find(Expression&gt; predicate)
+        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
-            return Context.Set().Where(predicate);
+            return Context.Set<TEntity>().Where(predicate);
         }
 
         public TEntity Get(int id)
         {
-            return Context.Set().Find(id);
+            return Context.Set<TEntity>().Find(id);
         }
 
-        public IEnumerable GetAll()
+        public IEnumerable<TEntity> GetAll()
         {
-            return Context.Set().ToList();
+            return Context.Set<TEntity>().ToList();
         }
 
         public void Remove(TEntity entity)
         {
-            Context.Set().Remove(entity);
+            Context.Set<TEntity>().Remove(entity);
         }
 
-        public void RemoveRange(IEnumerable entities)
+        public void RemoveRange(IEnumerable<TEntity> entities)
         {
-            Context.Set().RemoveRange(entities);
+            Context.Set<TEntity>().RemoveRange(entities);
         }
     }
 ```
@@ -159,9 +159,9 @@ Görüldüğü üzere, repository içerisinde save veya update metodları bulunm
 Yukarıda tanımını yaptığımız generic repository'den Kişileri çekebileceğimiz yapı üretmek üzere KişilerRepository türetelim. Öncelikle IRepositoryKisiler interface tanımlamasını yapalım. Interface içine örnek olsun diye sadece kişi listesini alabileceğim bir metod ekleyeceğim.  
 
 ```
-    public interface IKisilerRepository : IRepository
+    public interface IKisilerRepository : IRepository<Kisi>
     {
-        IEnumerable KisileriGetir();
+        IEnumerable<Kisi> KisileriGetir();
 
     }
 ```
@@ -170,7 +170,7 @@ Yukarıda tanımını yaptığımız generic repository'den Kişileri çekebilec
 Görüldüğü gibi IKisilerRepository interface'i IRepository generic repository'den türemekte ve Kişi tipini almaktadır. İmplementasyonu gerçekleştirelim.  
 
 ```
-    public class KisilerRepository : Repository, IKisilerRepository
+    public class KisilerRepository : Repository<Kisi>, IKisilerRepository
     {
         public KisiDbContext KisiDbContext
         {
@@ -181,7 +181,7 @@ Görüldüğü gibi IKisilerRepository interface'i IRepository generic repositor
         {
         }
 
-        public IEnumerable KisileriGetir()
+        public IEnumerable<Kisi> KisileriGetir()
         {
             return KisiDbContext.Kisiler;
         }
@@ -211,15 +211,14 @@ Bu interface implementasyonu aşağıdaki gibidir.
     public class UnitOfWork : IUnitOfWork
     {
         private readonly KisiDbContext _context;
+        public IKisilerRepository Kisiler { get; private set; }
 
         public UnitOfWork(KisiDbContext context)
         {
             _context = context;
             Kisiler = new KisilerRepository(_context);
         }
-
-        public IKisilerRepository Kisiler { get; private set; }
-
+        
         public int Complete()
         {
             return _context.SaveChanges();
