@@ -27,6 +27,7 @@ Konulara göre yazılarım :
 
 ### Tasarım Kalıpları (Design Patterns)
 * [Repository ve Unit Of Work Tasarım Kalıbı ve Uygulanması](https://enginunal.github.io/RepositoryVeUnitOfWork)  
+* [C# İle Object Oriented Programming Temelleri](https://enginunal.github.io/OOPTemelleri)  
 
 
 
