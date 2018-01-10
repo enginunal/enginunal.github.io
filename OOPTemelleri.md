@@ -58,33 +58,33 @@ C# dilinde soyutlama soyut sınıf(abstract class) ve soyut yöntemler(abstract 
 
 ```
 public abstract class Shape
-        {
-            private int _width;
-            private int _height;
+{
+    private int _width;
+    private int _height;
 
-            public int Width
-            {
-                get { return _width; }
-                set { _width = value; }
-            }
+    public int Width
+    {
+	get { return _width; }
+	set { _width = value; }
+    }
 
-            public int Height
-            {
-                get { return _height; }
-                set { _height = value; }
-            }
-            
-            public abstract float CalculateArea();
-                        
-        }
+    public int Height
+    {
+	get { return _height; }
+	set { _height = value; }
+    }
 
-        public class Rectangle : Shape
-        {
-            public override float CalculateArea()
-            {
-                return Width * Height;
-            }
-        }
+    public abstract float CalculateArea();
+
+}
+
+public class Rectangle : Shape
+{
+    public override float CalculateArea()
+    {
+	return Width * Height;
+    }
+}
 ```
 
 
@@ -97,30 +97,30 @@ Bu özellik kod işlevselliğini yeniden kullanma fırsatı sağlar ve uygulama 
 Triangle class'ı Shape class'ından türetilmiştir ve onun Width,Height ve ShowDim üyelerini kalıtımsal olarak kendi sınıfında kullanabilir.  
 
 ```
-        public class Shape
-        {
-            public double Width;
-            public double Height;
-            public void ShowDim()
-            {
-                Console.WriteLine("Width and height are " + Width + " and " + Height);
-            }
-        }
+public class Shape
+{
+    public double Width;
+    public double Height;
+    public void ShowDim()
+    {
+	Console.WriteLine("Width and height are " + Width + " and " + Height);
+    }
+}
 
-        public class Triangle : Shape
-        {
-            public string Style;
+public class Triangle : Shape
+{
+    public string Style;
 
-            public void ShowArea()
-            {
-                Console.WriteLine("Area is " +  Width * Height / 2);
-            }
+    public void ShowArea()
+    {
+	Console.WriteLine("Area is " +  Width * Height / 2);
+    }
 
-            public void ShowStyle()
-            {
-                Console.WriteLine("Triangle is " + Style);
-            }
-        }
+    public void ShowStyle()
+    {
+	Console.WriteLine("Triangle is " + Style);
+    }
+}
 ```
 
 
@@ -148,42 +148,42 @@ Dinamik polimorfizmde, çalışma zamanında karar verilir. (overriding)
 Statik polimorfizm örneği:  
 
 ```
-	public class Overloading
-        {
-            public void Add(string a1, string a2)
-            {
-                Console.WriteLine("Adding Two String :" + a1 + a2);
-            }
+public class Overloading
+{
+    public void Add(string a1, string a2)
+    {
+	Console.WriteLine("Adding Two String :" + a1 + a2);
+    }
 
-            public void Add(int a1, int a2)
-            {
-                Console.WriteLine("Adding Two Integer :" + (a1 + a2));
-            }
-        }
+    public void Add(int a1, int a2)
+    {
+	Console.WriteLine("Adding Two Integer :" + (a1 + a2));
+    }
+}
 ```  
 
 Dinamik polimorfizm örneği:  
 
 ```
-	public class Overriding
-        {
-            public class Base
-            {
-                public virtual void Show()
-                {
-                    Console.WriteLine("Show() From Base Class.");
-                }
-            }
+public class Overriding
+{
+    public class Base
+    {
+	public virtual void Show()
+	{
+	    Console.WriteLine("Show() From Base Class.");
+	}
+    }
 
-            public class Derived : Base
-            {
-                public override void Show()
-                {
-                    Console.WriteLine("Show() From Derived Class.");
-                }
-            }
+    public class Derived : Base
+    {
+	public override void Show()
+	{
+	    Console.WriteLine("Show() From Derived Class.");
+	}
+    }
 
-        }
+}
 ```
   
 Derived sınıfı, temel sınıfımız olan Base sınıfı tipinde bir nesne olarak saklanabilir.  
