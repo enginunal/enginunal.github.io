@@ -1,6 +1,8 @@
 [Ana Sayfa](https://enginunal.github.io/)
 
-# Azure Serverless Mimarisi Üzerinde Azure Functions Örneği – HttpTrigger
+# Azure Functions İle HttpTrigger Örneği
+
+## (Azure Serverless Mimarisi Üzerinde Azure Functions Örneği – HttpTrigger)
 
 Serverless computing, kodun altında çalışan framework + işletim sistemi + sunucu gibi konulara odaklanmak ve bunların bakım ve 
 performans yönetimleriyle uğraşmak yerine sadece yapılan işe odaklı bir yapı sunmasıyla oldukça popüler konulardan biri haline geldi.  
