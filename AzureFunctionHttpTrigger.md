@@ -36,7 +36,7 @@ Oluşturma işlemi sonlandığında aşağıdaki gibi mesaj gösterecektir. Go t
 
 ![image](https://4.bp.blogspot.com/-bLwwYkvrcZY/Wl3_nXpaCAI/AAAAAAAAAeA/fhYpYKsJ-1EmVQWqaVY23JIABHxrblS1gCLcBGAs/s1600/Screenshot_4.jpg)  
 
-Gelen şablonlar arasından HTTP trigger şablonunu ve dil olarak C# seçimi yapıyoruz.  
+Gelen şablonlar arasından HTTP trigger şablonunu ve dil olarak C# seçimi yapıyoruz.   
 
 ![image](https://1.bp.blogspot.com/-HsVHT5p1ZTw/Wl3_wW6Zg1I/AAAAAAAAAeI/3cJcDMmFRB0YOKLWrgCVlC4Fnu_qoTCzACLcBGAs/s1600/Screenshot_5.jpg)
 
@@ -52,51 +52,51 @@ Vereceğim örnek üzerinden devam etmek isteyenler aşağıda yazdığım kodu 
 Sonrasında save ile kaydedip soldaki test menüsünden test işlemlerini gerçekleştiriyoruz. Bu kod örneğinde gelen isteğin GET veya POST olmasına göre ayrı metodlar çağrılmakta ve bu metodlarda işlemler yapılmakta.  
 
 '''
-using System.Net;
+using System.Net;  
 
-public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
-{
-    log.Info("C# HTTP trigger fonksiyonuna istek geldi.");
-    string result;
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)  
+{  
+    log.Info("C# HTTP trigger fonksiyonuna istek geldi.");  
+    string result;  
 
-    switch (req.Method.Method)
-    {
-        case "GET":
-            result = GetMethodSample(req.GetQueryNameValuePairs());
-            break;
-        case "POST":
-            result = PostMethodSample(await req.Content.ReadAsAsync<object>());
-            break;
-        default:
-            //zaten HttpTrigger attribute'unda geet ve post tanımı yapıldığı için buraya düşmeyecektir. 
-            return req.CreateResponse(HttpStatusCode.NotImplemented, new
-            {
-                durum = "sorun var",
-                mesaj = "Sadece get ve post metodları desteklenmekte."
-            });
-    }
+    switch (req.Method.Method)  
+    {  
+        case "GET":  
+            result = GetMethodSample(req.GetQueryNameValuePairs());  
+            break;  
+        case "POST":  
+            result = PostMethodSample(await req.Content.ReadAsAsync<object>());  
+            break;  
+        default:  
+            //zaten HttpTrigger attribute'unda geet ve post tanımı yapıldığı için buraya düşmeyecektir.   
+            return req.CreateResponse(HttpStatusCode.NotImplemented, new  
+            {  
+                durum = "sorun var",  
+                mesaj = "Sadece get ve post metodları desteklenmekte."  
+            });  
+    }  
 
-    return result == null
-        ? req.CreateResponse(HttpStatusCode.BadRequest, new
-        {
-            durum = "sorun var",
-            mesaj = "ad girilmesi gerekmektedir. Düzeltip tekrar deneyin."
-        })
-        : req.CreateResponse(HttpStatusCode.OK, new
-        {
-            durum = "Tamam",
-            mesaj = "Merhaba, " + result + " test fonksiyonuna hoş geldiniz."
-        });
-}
+    return result == null  
+        ? req.CreateResponse(HttpStatusCode.BadRequest, new  
+        {  
+            durum = "sorun var",  
+            mesaj = "ad girilmesi gerekmektedir. Düzeltip tekrar deneyin."  
+        })  
+        : req.CreateResponse(HttpStatusCode.OK, new  
+        {  
+            durum = "Tamam",  
+            mesaj = "Merhaba, " + result + " test fonksiyonuna hoş geldiniz."  
+        });  
+}  
 
-private static string PostMethodSample(object contentVal)
+private static string PostMethodSample(object contentVal)  
 {
     return ((dynamic)contentVal)?.ad;
 }
 
-private static string GetMethodSample(IEnumerable<KeyValuePair<string, string>> valuePairs)
+private static string GetMethodSample(IEnumerable<KeyValuePair<string, string>> valuePairs)  
 {
-    return valuePairs.FirstOrDefault(q => String.Compare(q.Key, "ad", true) == 0).Value;
+    return valuePairs.FirstOrDefault(q => String.Compare(q.Key, "ad", true) == 0).Value;  
 }
 '''
 
@@ -133,4 +133,4 @@ Oluşturulan tanım dosyası swagger gibi OpenAPI editörleri ile düzenlenebili
 
 Bu yazının devamında aynı işlemin visual studio ile nasıl yapıldığı bilgisini de yakın zamanda paylaşıyor olacağım.  
 
-![image]()
+
