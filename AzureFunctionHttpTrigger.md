@@ -18,7 +18,7 @@ umarım bu konularda merakı olanlar için faydalı olur.
 Bunun için daha önceden bir hesabınız yoksa https://portal.azure.com adresinden deneme süresi boyunca kullanabileceğiniz bir 
 hesap açabilirsiniz. Hesap adımını halletiysek adım adım ilerleyerek başlayalım.  
 
-##1- Portal Üzerinden Azure Function App Oluşturulması
+## 1- Portal Üzerinden Azure Function App Oluşturulması
 
 Azure portaline girdikten sonra azure functions oluşturmak için sol üst köşedeki + New ile Azure Marketplace içinden 
 Compute altındaki Function App menüsüne giriyoruz.  
@@ -137,7 +137,7 @@ Oluşturulan tanım dosyası swagger gibi OpenAPI editörleri ile düzenlenebili
   
   
   
-##2- Visual Studio 2017 Üzerinden Azure Function App Oluşturulması ve Publish işlemi
+## 2- Visual Studio 2017 Üzerinden Azure Function App Oluşturulması ve Publish işlemi
 
 Eğer yüklü değilse Azure development workload yüklenmeli. Bunun için Visual Studio Tools altındaki Get Tools and Features ile modify ekranını açıp workloads sayfasından yükleyebilirsiniz.  
   
