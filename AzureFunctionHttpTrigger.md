@@ -51,7 +51,7 @@ Karşımızda aşağıdaki gibi bir ekran çıkacaktır. Burada csx dosyasının
 Vereceğim örnek üzerinden devam etmek isteyenler aşağıda yazdığım kodu bu ekrana kopyalayabilir.  
 Sonrasında save ile kaydedip soldaki test menüsünden test işlemlerini gerçekleştiriyoruz. Bu kod örneğinde gelen isteğin GET veya POST olmasına göre ayrı metodlar çağrılmakta ve bu metodlarda işlemler yapılmakta.  
 
-'''
+```
 using System.Net;  
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)  
@@ -98,7 +98,8 @@ private static string GetMethodSample(IEnumerable<KeyValuePair<string, string>> 
 {
     return valuePairs.FirstOrDefault(q => String.Compare(q.Key, "ad", true) == 0).Value;  
 }
-'''
+
+```
 
 Kodlama sonrasında soldaki menüden Integrate ekranına geçerek trigger’ımızın hangi HTTP metodlarına izin vereceğini tanımlıyoruz.  
 
