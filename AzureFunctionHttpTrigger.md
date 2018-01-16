@@ -18,7 +18,7 @@ umarım bu konularda merakı olanlar için faydalı olur.
 Bunun için daha önceden bir hesabınız yoksa https://portal.azure.com adresinden deneme süresi boyunca kullanabileceğiniz bir 
 hesap açabilirsiniz. Hesap adımını halletiysek adım adım ilerleyerek başlayalım.  
 
-## Portal Üzerinden Azure Function App Oluşturulması
+##1- Portal Üzerinden Azure Function App Oluşturulması
 
 Azure portaline girdikten sonra azure functions oluşturmak için sol üst köşedeki + New ile Azure Marketplace içinden 
 Compute altındaki Function App menüsüne giriyoruz.  
@@ -133,7 +133,84 @@ Açılan ekranda API definition source altındaki Function düğmesiyle OpenAPI 
 
 Bu ekrandan Generate API definition template ile api tanımı, şablondan ürettirilir. Bu işlem sonrasında azure functions.json isminde openAPI tanım dosyası oluşturur.   
 Oluşturulan tanım dosyası swagger gibi OpenAPI editörleri ile düzenlenebilir.  
+  
+  
+  
+  
+##2- Visual Studio 2017 Üzerinden Azure Function App Oluşturulması ve Publish işlemi
 
-Bu yazının devamında aynı işlemin visual studio ile nasıl yapıldığı bilgisini de yakın zamanda paylaşıyor olacağım.  
+Eğer yüklü değilse Azure development workload yüklenmeli. Bunun için Visual Studio Tools altındaki Get Tools and Features ile modify ekranını açıp workloads sayfasından yükleyebilirsiniz.  
+  
+  
+Yükleme işlemi sonrasında aynen diğer projeleri başlattığımız gibi yeni bir proje başlatıp buradan Azure Functions seçiyor ve isimlendirip devam ediyoruz.  
+  
+  
+![image](https://3.bp.blogspot.com/-QQC71aY3EWY/Wl4VLiSs8TI/AAAAAAAAAfI/R8080kPA1oEy6_KUU5vzV4m5v1Df9GIuQCLcBGAs/s1600/Screenshot_1.jpg)    
 
+Projemiz Http trigger örneği olacağından Http trigger seçip storage account olarak emulator verip devam ediyoruz.  
+  
+  
+![image](https://1.bp.blogspot.com/-6K_xfPOeHjU/Wl4VMiTJu9I/AAAAAAAAAfU/aA1CDbDX49w2lVtsHr78xq3GrCgZh0-6QCLcBGAs/s1600/Screenshot_2.jpg)    
+
+ Karşımıza örnek code geliyor ve aşağıdaki ile değiştiriyoruz.  
+   
+   
+![image](https://4.bp.blogspot.com/-nwMXyI7VEHQ/Wl4VNOn_dUI/AAAAAAAAAfY/3ibHzILDLLE6KYkaZOJXSCEGYo6ITtuHACLcBGAs/s1600/Screenshot_3.jpg)    
+  
+  
+Yukarıdaki kodu içeren projeyi repository'lerim altına ekledim https://github.com/enginunal/FunctionAppEngin inceleyebilirsiniz.  
+  
+  
+Bu işlemden sonra debug yapabilecek noktaya geldik ve F5 ile debug işlemini başlattığımızda Azure Functions Core Tools (cli) ile servisi başlatıp debug işlemine geçiyoruz. Eğer cli yüklü değilse bunu yüklemeyi soruyor ve evet derseniz tüm işlemleri tamamlayıp debug için hazır hale getiriyor.
+  
+  
+![image](https://2.bp.blogspot.com/-K6J546dRA34/Wl4VNlWLbzI/AAAAAAAAAfc/8tNnICE9b4wD6D-Jx_-8EtbrdfzXt-CxACLcBGAs/s1600/Screenshot_4.jpg)   
+
+Bu aşamada fonksiyonumuzu, Postman gibi HTTP metodlarını kullanabildiğimiz araçlardan biriyle çağırabiliriz. Aşağıda gönderdiğim get ve post ekran çıktıları ve işlem sonuçları görülebilir.  
+  
+  
+![image](https://1.bp.blogspot.com/-K80U25RlCM8/Wl4VOMi0x6I/AAAAAAAAAfg/K1apmA24aBUpc5EO9LB4UeA4PDH7AezJwCLcBGAs/s1600/Screenshot_5.jpg)   
+  
+  
+![image](https://2.bp.blogspot.com/-3LQ_SKdi4JM/Wl4VOvDrjwI/AAAAAAAAAfk/sQBcixKz3ZgO4n7gZ4zqvuMXtFu7dOCLACLcBGAs/s1600/Screenshot_6.jpg)   
+  
+  
+![image](https://3.bp.blogspot.com/-TyAUgmn2Nbo/Wl4VPJuA6rI/AAAAAAAAAfo/f3S4EMtd7nogHo1xsEafIehK2wBQ6NA0wCLcBGAs/s1600/Screenshot_7.jpg)   
+
+Son olarak yazdığımız fonksiyon eğer publish edilecekse Publish adımından nereye publish edileceğini seçebiliriz. Ben doğrudan Azure üzerine ve yeni bir fonksiyon olarak publish edeceğim.  
+  
+  
+![image](https://3.bp.blogspot.com/-mtcOcGcS5Bw/Wl4VPRA4_lI/AAAAAAAAAfs/wQgQWSgP_SwJgOFFr3MjABrk56SclNgzQCLcBGAs/s1600/Screenshot_8.jpg)   
+
+Eğer login olmuşsak ve azure üzerinde functions için hakkımız varsa ekran çıktılarında görüldüğü üzere fazla bir tanımlama yükü ile uğraşmadan publish işlemini gerçekleştirebiliyoruz.  
+  
+  
+![image](https://1.bp.blogspot.com/-I6F1EYhhOQo/Wl4VQPyjmuI/AAAAAAAAAfw/3HAubhh6lcMllpCm6LzIPL6zi4lXzKTcACLcBGAs/s1600/Screenshot_9.jpg)    
+  
+  
+
+![image](https://3.bp.blogspot.com/-fgTjPe7CV3Y/Wl4VLoWdEYI/AAAAAAAAAfA/DoZ_Lr_IutMz8_MzD7hXwuTXyC9O8BbOgCLcBGAs/s1600/Screenshot_10.jpg)  
+  
+  
+
+![image](https://3.bp.blogspot.com/-1W4hAXXCMGM/Wl4VLilnsSI/AAAAAAAAAfE/wA1h7HrxxLMFmrMiO2OJ89CK658yfgp7ACLcBGAs/s1600/Screenshot_11.jpg)
+  
+  
+Azure portale girip baktığımızda yaptığımız publish'i kontrol edebilir ve gerekiyorsa düzenleme yapabiliriz.  
+  
+  
+
+![image](https://3.bp.blogspot.com/-Hj3yHzF7zzE/Wl4VMRCGgdI/AAAAAAAAAfM/9N_v_JCE7iM5I9Zv4FqmEDtaSoHTfiQowCLcBGAs/s1600/Screenshot_12.jpg)  
+  
+  
+Yazdığımız fonksiyonun tanım dosyası function.json  
+
+![image](https://3.bp.blogspot.com/-i4VESkcIiz8/Wl4VMpcqYmI/AAAAAAAAAfQ/26d9O4cRLx4N74T9dTLaaXutJJfFlNexQCLcBGAs/s1600/Screenshot_13.jpg)  
+  
+    
+  
+  
+Not:  
+
+function.json içerisindeki generatedBy satırını silmeniz gerekiyor bu şekilde kullanıma başlayabilirsiniz.  
 
