@@ -18,6 +18,7 @@ Konulara göre yazılarım :
 
 ### Bulut
 * [Bulut Mimarisinin Temelleri](https://enginunal.github.io/BulutTemelleri)
+* [Azure Functions İle HttpTrigger Örneği](https://enginunal.github.io/AzureFunctionHttpTrigger)
 
 
 ### Matematik
