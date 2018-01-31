@@ -177,6 +177,7 @@ Kısaca değinmek üzere başladığım fakat zaman zaman detaya inmek durumunda
 Önceden tanımlanmış ve koşullar sağlandığında çalışmak üzere kurulu bekleyen işlemlerin/süreçlerin sunulduğu esnek mimarilerin kullanıma açılması da hayatımıza ilk aşamada girmesi beklenen gelişmeler olarak sıralanabilir. Sonuç olarak Blockchain teknolojisi zaman içinde yaygınlaşarak çeşitlenecektir ve daha farklı alanlarda kullanıma açılacaktır.  
 
 
-
+  
+    
 
 Engin ÜNAL
