@@ -81,7 +81,8 @@ Bitcoin Blok Başlığı yapısı:
 |Zorluk Derecesi | 4 byte | Proof Of Work algoritması zorluk hedefi|
 |Nonce | 4 byte | Sayaç(PoW tarafından kullanılacak)|
 
-
+  
+  
 ## Merkle Ağacı
 
 Bitcoin blok zincirindeki her blok, bir merkle ağacı kullanarak bloğun tüm işlemlerinin bir hash’ini içerir. Merkle tree, aynı zamanda binary hash tree olarak da bilinir. Büyük veri kümelerinin bütünlüğünü verimli bir şekilde hash’lemek ve doğrulamak için kullanılan bir veri yapısıdır. Merkle ağaçları kriptografik hash’ler içeren ikili ağaçlardır. "Ağaç" veya tree terimi, dallanmış bir veri yapısını tanımlamak için bilgisayar bilimlerinde kullanılır.  
@@ -91,7 +92,9 @@ Bir işlemin bir bloğa dahil olup olmadığını doğrulamak için çok verimli
 
 ![image](https://3.bp.blogspot.com/zkhmL0QDukOyFaWcL8PF_I_sf12BSRh5mWXzDNizUsTcjuzMRay8uQracQYZXE0Z5oODQHT9zZaBku887Nux8pHygXY717Z0Di7alS_7slTtZd_4PEh1QNs76AKr4twYSatohFwz)  
   
-  
+    
+      
+      
 ## İşlemler  
 
 Blokların işlem kayıtlarını sakladığından ve işlemlerin güvenliğinin bloklar tarafından sağlandığından bahsetmiştim. İşlem nedir? Neden bu kadar önemlidir? İşlem kaydı(transaction) en basit anlatımla para transferidir. Hesabınızdaki mevcut kripto paranın başka birine gönderilmesi bir işlem kaydı oluşturur ve bunun gibi her hareket birer işlem olarak kabul edilir. Yapılan her işlem herkese açıktır ve Blockchain defterindeki blok içinde saklanır. Aslında tüm yapı bu transfer işlemlerinin doğru ve güvenli sağlanması üzerine inşa edilmiştir. O nedenle işlemler tüm mimarinin en temel ve en önemli yapı taşıdır.  
@@ -153,6 +156,8 @@ Girdi ve çıktı işlemlerinin çalışma mantığı şu şekildedir:
 
 İşlem kaydı çıktısı içinde ise gönderilecek miktar ve bu miktarı kullanabilecek alıcının sağlaması gereken bazı kurallar dizisi ve alıcının adresi yazılır. Bu kurallar ödemenin kim tarafından ve nasıl kullanılacağını belirleyen kurallardır. Transaction output içinde script alanı bu işlem için kullanılmaktadır.   
 
+
+  
 ## Proof Of Work
 
 Önceki bölümlerde blok üretiminin madenciler tarafından gerçekleştirildiğini ve bunun matematiksel süreçlerden geçerek sağlandığını kısaca açıklamıştım. Her blok zincire eklenmeden önce bazı kriptografik işlemlerden geçer ve önceden tanımlı şartlara uyarsa zincire eklenir. Bu şartları madenciler gerçekleştirmektedir. Madencilerin blok üretiminde yaptığı işin ispatı ise matematiksel olarak sağlanmaktadır. Bu kavrama da Proof Of Work denir. Aslında Proof Of Work nedir bunu anlayabilmek için madencilik ve madencilerin ne yaptığını bilmek gerekir ve bu bilgi PoW sistemini anlamak açısından yeterlidir.   
