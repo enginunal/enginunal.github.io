@@ -22,6 +22,7 @@ Konulara göre yazılarım :
 
 ### Blockchain
 * [Bitcoin ve Blockchain Nedir? Nasıl Çalışır?](https://enginunal.github.io/BitcoinAndBlockchain)
+* [Ethereum Blockchain ve Smart Contracts Giriş](https://enginunal.github.io/EthereumGiris)
 
 ### Matematik
 * [Olasılık Kuralları](https://enginunal.github.io/OlasilikKurallari)
