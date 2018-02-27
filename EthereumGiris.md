@@ -4,12 +4,12 @@
 # Ethereum Blockchain ve Smart Contracts Giriş
 
 
-Önceki yazımı okumadıysanız ve blockchain konusunda bilgi sahibi değilseniz öncelikle o yazıdan(https://enginunal.github.io/BitcoinAndBlockchain) başlamanızı öneririm.  
+Önceki yazımı okumadıysanız ve blockchain konusunda bilgi sahibi değilseniz öncelikle (o yazıdan)[https://enginunal.github.io/BitcoinAndBlockchain] başlamanızı öneririm.  
 
 Bu yazı, ethereum blockchain ve smart contracts konusu ile ilgili yazmayı düşündüğüm yazı serisinin ilk yazısı olmakla birlikte devamını vakit buldukça paylaşmaya çalışacağım. İlk yazıda sistemin genel hatlarını, ikincisinde kişisel bir ethereum blockchain yapılışını ve üçüncüsünde ise solidity ile smart contract geliştirip test blockchain’imize yüklemeyi gerçekleştirmeyi planlıyorum. Öncelikle ethereum’un mucidi Vitalik Buterin ile başlayalım.  
 
 
-Vitalik Buterin 1994 Rusya doğumlu ve 6 yaşında Kanada’ya yerleşmiş. Kanada Toronto’da yazılımcı olarak çalışırken Bitcoin teknolojisiyle ilgilenmeye başlıyor. Bitcoin Magazine isimli web sitesinin kurucularından ve bu sitede bir çok yazı (https://bitcoinmagazine.com/authors/vitalik-buterin) yayınlıyor. 2012 yılında Waterloo Üniversitesine giriyor ve ardından 2013 yılında yayınladığı teknik dökümanla(https://github.com/ethereum/wiki/wiki/White-Paper) Ethereum isminde alternatif bir platform fikrini duyurdu. Ocak 2014'te Ethereum, Vitalik tarafından Miami'deki Kuzey Amerika Bitcoin Konferansı'nda resmi olarak ilan edildi. Ethereum kurucu ortaklarından Dr. Gavin Wood ile çalışmaya başlamasının ardından Nisan 2014’te Gavin tarafından Ethereum konulu bir teknik makale yayınlandı (https://ethereum.github.io/yellowpaper/paper.pdf).  
+Vitalik Buterin 1994 Rusya doğumlu ve 6 yaşında Kanada’ya yerleşmiş. Kanada Toronto’da yazılımcı olarak çalışırken Bitcoin teknolojisiyle ilgilenmeye başlıyor. Bitcoin Magazine isimli web sitesinin kurucularından ve bu sitede bir çok yazı (burada)[https://bitcoinmagazine.com/authors/vitalik-buterin] yayınlıyor. 2012 yılında Waterloo Üniversitesine giriyor ve ardından 2013 yılında yayınladığı teknik dökümanla (burada)[https://github.com/ethereum/wiki/wiki/White-Paper] Ethereum isminde alternatif bir platform fikrini duyurdu. Ocak 2014'te Ethereum, Vitalik tarafından Miami'deki Kuzey Amerika Bitcoin Konferansı'nda resmi olarak ilan edildi. Ethereum kurucu ortaklarından Dr. Gavin Wood ile çalışmaya başlamasının ardından Nisan 2014’te Gavin tarafından Ethereum konulu bir teknik makale yayınlandı (burada)[https://ethereum.github.io/yellowpaper/paper.pdf].  
 
 Devam eden süreçte Ethereum yaygınlaşmaya devam etti. Bitcoin gibi bir kripto para mimarisi sunmakla birlikte getirdiği farklılıklar nedeniyle Blockchain dünyasında yeni gelişmelere ve ilerlemelere pencere açmış oldu. Önceki yazımda Bitcoin özelinde Blockchain mimarisine değinmiştim. Kısa bir özetini vermek gerekirse, Blockchain temel olarak bir veritabanıdır. Bir veritabanının görevi olan verilerin tutulması işlemini gerçekleştirir fakat yapısal olarak farklı bir mimariye sahiptir.   
 
@@ -90,7 +90,7 @@ contract SimpleStorage {
 ```
   
 
-Browser tabanlı ve offline olarak Solidity kodlarını derleyip test edebileceğiniz derleyici olarak https://github.com/ethereum/browser-solidity/tree/gh-pages adresindeki zip dosyasını indirip deneyebilirsiniz.  
+Browser tabanlı ve offline olarak Solidity kodlarını derleyip test edebileceğiniz derleyici olarak (https://github.com/ethereum/browser-solidity/tree/gh-pages)[https://github.com/ethereum/browser-solidity/tree/gh-pages] adresindeki zip dosyasını indirip deneyebilirsiniz.  
 Solidity ile ilgili daha detaylı bilgi ve uygulama örneğini sonraki yazılarımda eklemeyi planlıyorum o nedenle programlama kısmını kısa tuttum.  
 
 
