@@ -30,7 +30,7 @@ Martin Fowler repository tanımı için der ki:
 
 Bir çok yazının olmazsa olmazı aşağıdaki repository şemasını da eklemeliyim.  
 
-![image](https://3.bp.blogspot.com/-5ZhIqOImL1E/Wh0KGkAXuaI/AAAAAAAAAc8/Aqsb7OWrIyAQ-NYtRN6_-UHm1YtSOweggCLcBGAs/s320/Windows-Live-Writer_8c4963ba1fa3_CE3B_Repository_pattern_diagram_1df790d3-bdf2-4c11-9098-946ddd9cd884.png)  
+![image](/images/RepositoryVeUOW/UOW.png)  
 Resim microsoft asp.net konu anlatımı kısmından alınmıştır.  
   
   
