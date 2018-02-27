@@ -60,7 +60,7 @@ INFO [02-16|16:02:55] Successfully wrote genesis state         database=lightcha
 ```
   
 Evet ethereum blockchain hazır, artık buna bağlanıp hesap açma veya mining işlemlerine başlayabiliriz. Geth bize bu tip işlemlerin yapılabilmesi için javascript tabanlı bir konsol sunuyor. Bunu açmak için aşağıdaki komutu kullanacağız. Bu komut içinde geçtiğimiz parametrelerin anlamı ise nodiscover: blockchain’imizi manuel olarak eklemeyenler tarafından keşfedilemediğinden emin olmak için kullanılır ve bilgimiz dışında eklenilmesini engeller, ipcdisable: IPC-RPC sunucusunu devre dışı bırakır.  
-Bunun gibi bir çok parametre mevcut bunların kullanımı ve açıklamaları https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options linkinden öğrenilebilir.  
+Bunun gibi bir çok parametre mevcut bunların kullanımı ve açıklamaları [https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) linkinden öğrenilebilir.  
   
 Konsolu açalım.  
 
