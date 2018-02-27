@@ -143,17 +143,17 @@ Eğer yüklü değilse Azure development workload yüklenmeli. Bunun için Visua
 Yükleme işlemi sonrasında aynen diğer projeleri başlattığımız gibi yeni bir proje başlatıp buradan Azure Functions seçiyor ve isimlendirip devam ediyoruz.  
   
   
-![image](/image/AzureFunctionsVS/Screenshot_1.jpg)    
+![image](/images/AzureFunctionsVS/Screenshot_1.jpg)    
 
 Projemiz Http trigger örneği olacağından Http trigger seçip storage account olarak emulator verip devam ediyoruz.  
   
   
-![image](/image/AzureFunctionsVS/Screenshot_2.jpg)    
+![image](/images/AzureFunctionsVS/Screenshot_2.jpg)    
 
  Karşımıza örnek code geliyor ve aşağıdaki ile değiştiriyoruz.  
    
    
-![image](/image/AzureFunctionsVS/Screenshot_3.jpg)    
+![image](/images/AzureFunctionsVS/Screenshot_3.jpg)    
   
   
 Yukarıdaki kodu içeren projeyi repository'lerim altına ekledim [link](https://github.com/enginunal/FunctionAppEngin) inceleyebilirsiniz.  
@@ -162,48 +162,48 @@ Yukarıdaki kodu içeren projeyi repository'lerim altına ekledim [link](https:/
 Bu işlemden sonra debug yapabilecek noktaya geldik ve F5 ile debug işlemini başlattığımızda Azure Functions Core Tools (cli) ile servisi başlatıp debug işlemine geçiyoruz. Eğer cli yüklü değilse bunu yüklemeyi soruyor ve evet derseniz tüm işlemleri tamamlayıp debug için hazır hale getiriyor.
   
   
-![image](/image/AzureFunctionsVS/Screenshot_4.jpg)   
+![image](/images/AzureFunctionsVS/Screenshot_4.jpg)   
 
 Bu aşamada fonksiyonumuzu, Postman gibi HTTP metodlarını kullanabildiğimiz araçlardan biriyle çağırabiliriz. Aşağıda gönderdiğim get ve post ekran çıktıları ve işlem sonuçları görülebilir.  
   
   
-![image](/image/AzureFunctionsVS/Screenshot_5.jpg)   
+![image](/images/AzureFunctionsVS/Screenshot_5.jpg)   
   
   
-![image](/image/AzureFunctionsVS/Screenshot_6.jpg)   
+![image](/images/AzureFunctionsVS/Screenshot_6.jpg)   
   
   
-![image](/image/AzureFunctionsVS/Screenshot_7.jpg)   
+![image](/images/AzureFunctionsVS/Screenshot_7.jpg)   
 
 Son olarak yazdığımız fonksiyon eğer publish edilecekse Publish adımından nereye publish edileceğini seçebiliriz. Ben doğrudan Azure üzerine ve yeni bir fonksiyon olarak publish edeceğim.  
   
   
-![image](/image/AzureFunctionsVS/Screenshot_8.jpg)   
+![image](/images/AzureFunctionsVS/Screenshot_8.jpg)   
 
 Eğer login olmuşsak ve azure üzerinde functions için hakkımız varsa ekran çıktılarında görüldüğü üzere fazla bir tanımlama yükü ile uğraşmadan publish işlemini gerçekleştirebiliyoruz.  
   
   
-![image](/image/AzureFunctionsVS/Screenshot_9.jpg)    
+![image](/images/AzureFunctionsVS/Screenshot_9.jpg)    
   
   
 
-![image](/image/AzureFunctionsVS/Screenshot_10.jpg)  
+![image](/images/AzureFunctionsVS/Screenshot_10.jpg)  
   
   
 
-![image](/image/AzureFunctionsVS/Screenshot_11.jpg)
+![image](/images/AzureFunctionsVS/Screenshot_11.jpg)
   
   
 Azure portale girip baktığımızda yaptığımız publish'i kontrol edebilir ve gerekiyorsa düzenleme yapabiliriz.  
   
   
 
-![image](/image/AzureFunctionsVS/Screenshot_12.jpg)  
+![image](/images/AzureFunctionsVS/Screenshot_12.jpg)  
   
   
 Yazdığımız fonksiyonun tanım dosyası function.json  
 
-![image](/image/AzureFunctionsVS/Screenshot_13.jpg)  
+![image](/images/AzureFunctionsVS/Screenshot_13.jpg)  
   
     
   
