@@ -30,7 +30,7 @@ Azure portal(portal.azure.com) sitesine girip Cognitive Service altındaki Langu
 
 
 
-![image](https://2.bp.blogspot.com/-GiylLXMHD7c/WdNYWKEQH4I/AAAAAAAAAX0/cZyv71og89MqVcUvOKHBl4mGgIDfG7P2ACK4BGAYYCw/s1600/1_CreateAzureLUISApp.jpg)
+![image](/images/luis/1_CreateAzureLUISApp.jpg)
 
 
 
@@ -40,7 +40,7 @@ Daha sonra yine aynı microsoft hesabıyla LUIS’in kendi sitesine(luis.ai) gir
 
 
 
-![image](https://1.bp.blogspot.com/-MTvuv4jyzag/WdNYZH7zGeI/AAAAAAAAAX8/8MW8N0y8D88SvpmaFrd9OrI1YTX-g3azwCK4BGAYYCw/s1600/1_CreateLuisApp.jpg)
+![image](/images/luis/1_CreateLuisApp.jpg)
 
 
 
@@ -50,7 +50,7 @@ Daha sonra yine aynı microsoft hesabıyla LUIS’in kendi sitesine(luis.ai) gir
 Uygulamamızı oluşturduktan sonra dashboard görüntüsü aşağıdaki gibi olacaktır.
 
 
-![image](https://1.bp.blogspot.com/-tlwKrFMbSlY/WdNY5V-WJZI/AAAAAAAAAYI/8h5oghDnKl0I9_mJdTlbrTjAwBPbIpvMgCK4BGAYYCw/s1600/2_CreatedAppOverview.jpg)
+![image](/images/luis/2_CreatedAppOverview.jpg)
 
 
 
@@ -60,7 +60,7 @@ Uygulamamızı oluşturduktan sonra dashboard görüntüsü aşağıdaki gibi ol
 Artık uygulamamıza Intent, Entity, Utterance tanımlamalarımızı yapabiliriz. Öncelikle intent ekleyerek başlayalım. Intent sayfasında Add Intent ile yeni intent ekleriz.
 
 
-![image](https://4.bp.blogspot.com/-p4kjMd5EfV8/WdNY8-bTzNI/AAAAAAAAAYQ/0srCmOt7HhY9JPrPyml4xmRZxX2nXJTHQCK4BGAYYCw/s1600/3_CreateIntent.jpg)
+![image](/images/luis/3_CreateIntent.jpg)
 
 
 
@@ -70,7 +70,7 @@ Intent eklemesini yaptıktan sonra Utterances ekranı gelir, bu ekrandan close d
 
 
 
-![image](https://1.bp.blogspot.com/-fxlJ8gv2CLE/WdNZPIpT2pI/AAAAAAAAAYg/gkYmBBcqbN8eswj3E3aEeJ4Dm7r2AJUogCK4BGAYYCw/s1600/4_CreateUtterance.jpg)
+![image](/images/luis/4_CreateUtterance.jpg)
 
 
 
@@ -83,7 +83,7 @@ Bu cümlede door kelimesi bizim entity değerimiz olacak. Door kelimesi üzerine
 
 
 
-![image](https://4.bp.blogspot.com/-0FvBRbhlgao/WdNZBOTusJI/AAAAAAAAAYY/5XW7FAki0lUv50RUqrBQHGgMzgIrndqsgCK4BGAYYCw/s1600/4_CreateEntity.jpg)
+![image](/images/luis/4_CreateEntity.jpg)
 
 
 
@@ -96,7 +96,7 @@ Daha sonra Train & Test kısmından Train Application yaparak uygulamamızı eğ
 
 
 
-![image](https://1.bp.blogspot.com/-hPljR7UL8c4/WdNZR2IcONI/AAAAAAAAAYo/AcNs43q8ioItPtwuASMnBOSfOeix-oXswCK4BGAYYCw/s1600/5_TestApp.jpg)
+![image](/images/luis/5_TestApp.jpg)
 
 
 
@@ -113,7 +113,7 @@ Publish edilen serivsimize erişim(consume) için c#, python gibi güncel diller
 
 
 
-https://github.com/enginunal/ConsumeLuisConsoleApp
+(https://github.com/enginunal/ConsumeLuisConsoleApp)
 
 
 
