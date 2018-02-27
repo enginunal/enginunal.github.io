@@ -30,7 +30,7 @@ Azure portal(portal.azure.com) sitesine girip Cognitive Service altındaki Langu
 
 
 
-![image](/images/luis/1_CreateAzureLUISApp.jpg)
+![image](/images/Luis/1_CreateAzureLUISApp.jpg)
 
 
 
@@ -40,7 +40,7 @@ Daha sonra yine aynı microsoft hesabıyla LUIS’in kendi sitesine(luis.ai) gir
 
 
 
-![image](/images/luis/1_CreateLuisApp.jpg)
+![image](/images/Luis/1_CreateLuisApp.jpg)
 
 
 
@@ -50,7 +50,7 @@ Daha sonra yine aynı microsoft hesabıyla LUIS’in kendi sitesine(luis.ai) gir
 Uygulamamızı oluşturduktan sonra dashboard görüntüsü aşağıdaki gibi olacaktır.
 
 
-![image](/images/luis/2_CreatedAppOverview.jpg)
+![image](/images/Luis/2_CreatedAppOverview.jpg)
 
 
 
@@ -60,7 +60,7 @@ Uygulamamızı oluşturduktan sonra dashboard görüntüsü aşağıdaki gibi ol
 Artık uygulamamıza Intent, Entity, Utterance tanımlamalarımızı yapabiliriz. Öncelikle intent ekleyerek başlayalım. Intent sayfasında Add Intent ile yeni intent ekleriz.
 
 
-![image](/images/luis/3_CreateIntent.jpg)
+![image](/images/Luis/3_CreateIntent.jpg)
 
 
 
@@ -70,7 +70,7 @@ Intent eklemesini yaptıktan sonra Utterances ekranı gelir, bu ekrandan close d
 
 
 
-![image](/images/luis/4_CreateUtterance.jpg)
+![image](/images/Luis/4_CreateUtterance.jpg)
 
 
 
@@ -83,7 +83,7 @@ Bu cümlede door kelimesi bizim entity değerimiz olacak. Door kelimesi üzerine
 
 
 
-![image](/images/luis/4_CreateEntity.jpg)
+![image](/images/Luis/4_CreateEntity.jpg)
 
 
 
@@ -96,7 +96,7 @@ Daha sonra Train & Test kısmından Train Application yaparak uygulamamızı eğ
 
 
 
-![image](/images/luis/5_TestApp.jpg)
+![image](/images/Luis/5_TestApp.jpg)
 
 
 
