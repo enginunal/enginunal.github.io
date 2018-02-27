@@ -4,7 +4,7 @@
 
 Son yıllarda yükselen değerleriyle ve spekülasyonlarıyla dikkatleri çeken kripto paralar ve bu paraların başlangıç noktası olan Bitcoin nasıl bir mimariye sahip, güvenliği nasıl sağlanıyor ve teknik olarak hangi farklılıklar getirdi. Bu yazıda Bitcoin özelinde Blockchain teknolojisi ve çalışma presipleri incelenecektir.  
 Hızla okunabilecek ve kolay anlaşılabilir bir yazı olması dileğiyle konuya başlayalım.  
-Bitcoin, 2008 yılında Satoshi Nakamoto isminde birinin ilk teknik dokümanı paylaşmasıyla fikir olarak ortaya atıldı(meraklısına link : https://bitcoin.org/bitcoin.pdf ) ve 2009 yılında aktif olarak kullanıma açıldı. Nakamoto, Bitcoin ismini ve teknik detayını açıkladıktan ve sistemin stabil hale gelip çarkların dönmesini sağladıktan sonra kayıplara karıştı ve arkasında bir çok soru işareti ve spekülasyon bıraktı. Aslında bu ismin bir takma ad olabileceği veya bir gruba ait olabileceği veya bunun derin bazı yapıların başlattığı bir proje olduğu gibi pek çok spekülasyon hala yapılıyor.  
+Bitcoin, 2008 yılında Satoshi Nakamoto isminde birinin ilk teknik dokümanı paylaşmasıyla ([https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf) ) gün yüzüne çıktı ve 2009 yılında aktif olarak kullanıma açıldı. Nakamoto, Bitcoin ismini ve teknik detayını açıkladıktan ve sistemin stabil hale gelip çarkların dönmesini sağladıktan sonra kayıplara karıştı ve arkasında bir çok soru işareti ve spekülasyon bıraktı. Aslında bu ismin bir takma ad olabileceği veya bir gruba ait olabileceği veya bunun derin bazı yapıların başlattığı bir proje olduğu gibi pek çok spekülasyon hala yapılıyor.  
 Sonuçta böyle birisi var mı veya Bitcoin fikri nasıl bir süreçle ortaya atıldı ve kimler devredeydi bilinmiyor, en azından biz bilmiyoruz. 
 Fakat şunu biliyoruz ki bu mimari ortaya atıldığından bu yana dünyada kendisine çok önemli bir yer edindi ve yolundan giden onlarca farklı alanda farklı teknolojiler de bulunmakta. Peki o kadar etki bırakmasının nedeni sadece sanal bir para olması mıdır? Bu soruya yanıt tabiki hayır olacaktır.  
 
@@ -29,7 +29,7 @@ Tanımı biraz daha özelleştirirsek Blockchain veritabanı birbirine kronoloji
 
 Blockchain veritabanının uçtan uca birbirine bağlı bilgisayarlar ile bir ağ yapısında güncel olarak tutulduğundan bahsetmiştim, bu sayede blok zincirinin tek merkezde tutulmasına kıyasla daha iyi korunacağı açıktır. Dünyanın bir bölgesindeki bilgisayarların aynı anda çökmesi söz konusu olsa bile bu yapı nedeniyle sağ kalan bilgisayarlar işlemlerin devam etmesini sağlayacaklardır.  
 
-![image](https://3.bp.blogspot.com/1gstBVnw82VdmGNlZkw65fNBFH82rX6-ByPvdoTvNw_hOi3aJ-lM9RlosvCjd8TyHvDWxnMf8_gYNGA_-9EyH0-1KLXQHJJegcHC90TAlu2zQcyHcf11TqkyhJBQ10Dy5b2i4pNB)  
+![image](/images/BitcoinVeBlockchain/1.png)  
 
 Blockchain’deki blokların her birinin bir öncekine referans etmesi nedeniyle örneğin zincirdeki blokların arasına kaçak bir blok eklenmek istendiğinde eklenen bloğun kendisinden sonra gelen tüm blokları etkilemesi ve bu şekilde zincire olabilecek müdahalelerin engellenmesi sağlanmıştır. Bu mekanizma nasıl işliyor kısaca ona bakalım. Her blok bir önceki blok özetinin hash değerini kendi içinde tutmakta. Ve her blok aynı zamanda kendi hash bilgisini de bulundurmakta. Bu şekilde bloğumuzun değiştirilemez olması sağlanırken, bloklar arasındaki bağlantıların da değiştirilemez olmasını sağlamakta. Hash’lenmiş bir veride en ufak bir değişiklik hash’in tamamen değişmesine yol açmaktadır.  
 
@@ -90,7 +90,7 @@ Bitcoin blok zincirindeki her blok, bir merkle ağacı kullanarak bloğun tüm i
 Tam olarak yapılan şudur; Blok içindeki tüm işlemler(transactions) hash’lenir elde edilen iki hashler ikişer olarak birleştirilip bir üst seviyede tekrar hash’lenir. Bu şekilde ikişer ikişer döngüsel olarak tek hash kalana kadar işlem devam eder. Kalan bu hash değerine de dijital parmak izi(Merkle Root) denir.  
 Bir işlemin bir bloğa dahil olup olmadığını doğrulamak için çok verimli bir süreç sağlamaktadır. Merkle Root elde edilince bunu Blok Header’a yazar. Bitcoin'in merkle ağaçlarında kullanılan şifreleme hash algoritması, SHA256'dır.  
 
-![image](https://3.bp.blogspot.com/zkhmL0QDukOyFaWcL8PF_I_sf12BSRh5mWXzDNizUsTcjuzMRay8uQracQYZXE0Z5oODQHT9zZaBku887Nux8pHygXY717Z0Di7alS_7slTtZd_4PEh1QNs76AKr4twYSatohFwz)  
+![image](/images/BitcoinVeBlockchain/2.png)  
   
     
       
