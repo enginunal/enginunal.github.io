@@ -3,12 +3,12 @@
 # Kendi Ethereum Blockchain’imizi Yapıyoruz  
 
 
-Önceki yazımda ethereum ve smart contracts konusunda bazı bilgiler vermiştim. Bu yazıda ise kendimize ait özel ethereum blockchain oluşturup işin pratiğine girmeye başlayacağız. Öncelikle ethereum blockchain oluşturmamızda tüm işi yüklenen Geth isimli bir CLI(Command Line Interface) aracı ile başlayalım.  
+Önceki yazımda [burada](https://enginunal.github.io/EthereumGiris) ethereum ve smart contracts konusunda bazı bilgiler vermiştim. Bu yazıda ise kendimize ait özel ethereum blockchain oluşturup işin pratiğine girmeye başlayacağız. Öncelikle ethereum blockchain oluşturmamızda tüm işi yüklenen Geth isimli bir CLI(Command Line Interface) aracı ile başlayalım.  
 
 Geth, go diliyle yazılmış bir uygulamadır ve ethereum blockchain üzerinde bir çok işlem yapabilmemize olanak sağlar. Geth ile ethereum üzerinde gerçekleştirilebilecek neler var sorusuna; Mandecilik, para transferleri, smart contract işlemleri, blokların sorgulanması gibi bir çok işlem yanıtı verilebilir. Geth gerçek ethereum ağına bağlı veya test ethereum ağınızda çalıştırılabilir. Bu yazıda geth ile test ethereum blockchain’imizi oluşturacağız.   
 
 
-Öncelikle geth’in bilgisayarınıza yüklenmesi gerekmekte. Bunun için ise kullandığınız işletim sistemine göre bazı adımları izlemeniz gerekmekte. Yazıyı uzatmamak için buraya bunları eklemiyorum, yandaki linkten https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum kurulumu gerçekleştirebilirsiniz. Yazıyı yazarken kullandığım işletim sistemi Windows olduğundan Windows komut satırı çıktısı üzerinden devam edeceğim.   
+Öncelikle geth’in bilgisayarınıza yüklenmesi gerekmekte. Bunun için ise kullandığınız işletim sistemine göre bazı adımları izlemeniz gerekmekte. Yazıyı uzatmamak için buraya bunları eklemiyorum, (bu linkten)[https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum] kurulumu gerçekleştirebilirsiniz. Yazıyı yazarken kullandığım işletim sistemi Windows olduğundan Windows komut satırı çıktısı üzerinden devam edeceğim.   
 
 Kurulumu tamamladıktan sonra ilk olarak kendimize bir klasör açalım. Ve klasör içine girip genesis.json dosyası oluşturalım. dosyanın ismi önemli değil myTest.json da olabilir.   
 
@@ -378,7 +378,7 @@ node 2 konsol > eth.blockNumber
 Aynı sayıda blok senkron edilmiş görülüyor. Bu testi mining başlatarak da yapabilirsiniz. Örneğin ilk node’dan mining başlatıp ikinci node’daki blockNumber’ın değiştiği görülebilir.  
 
 
-İkinci yazımı burada sonlandırıyorum. Bu yazıda sadece geth ile bu işlemlerin nasıl yapılabileceği konusuna değindim. Geth haricinde Truffle(http://truffleframework.com/ ) ve  Ganache(http://truffleframework.com/ganache/ ) ‘ın bu işlemler için hangi kolaylıklar getirdiğini de sizin incelemenizi tavsiye ederim. Umarım faydalı bir yazı olmuştur.
+İkinci yazımı burada sonlandırıyorum. Bu yazıda sadece geth ile bu işlemlerin nasıl yapılabileceği konusuna değindim. Geth haricinde (Truffle)[http://truffleframework.com/] ve  (Ganache)[http://truffleframework.com/ganache/] ‘ın bu işlemler için hangi kolaylıklar getirdiğini de sizin incelemenizi tavsiye ederim. Umarım faydalı bir yazı olmuştur.
 
 
 
