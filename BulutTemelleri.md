@@ -23,7 +23,7 @@ Melez bulut kullanmak, yalnızca şirketlerin bilgi işlem kaynaklarını ölçe
 
 Bu konuyla ilgili aşağıdaki görsel ile başlayalım. IaaS, PaaS ve SaaS ile ilgili olan bu görsel aşağıdaki anlatım öncesi bir fikir verecektir.  
 
-![image](https://3.bp.blogspot.com/-QeOBZBJnGn0/WfxiGaQ3mFI/AAAAAAAAAbw/OWfjIB57IAEhAaDj9NB3NEtiqg5tIuVsACK4BGAYYCw/s1600/PublicCloudServices.jpg)  
+![image](/images/BulutTemelleri/PublicCloudServices.jpg)  
 
 
 Tek tek IaaS, PaaS ve SaaS maddelerine geçmeden önce konuyu basitleştirmek adına yakın zamanda okuduğum bir yazıdaki örnekle başlamak istiyorum.  
