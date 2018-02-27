@@ -3,7 +3,7 @@
 # Kendi Ethereum Blockchain’imizi Yapıyoruz  
 
 
-Önceki yazımda [burada](https://enginunal.github.io/EthereumGiris) ethereum ve smart contracts konusunda bazı bilgiler vermiştim. Bu yazıda ise kendimize ait özel ethereum blockchain oluşturup işin pratiğine girmeye başlayacağız. Öncelikle ethereum blockchain oluşturmamızda tüm işi yüklenen Geth isimli bir CLI(Command Line Interface) aracı ile başlayalım.  
+Önceki yazımda ([Ethereum Blockchain ve Smart Contracts Giriş](https://enginunal.github.io/EthereumGiris)) ethereum ve smart contracts konusunda bazı bilgiler vermiştim. Bu yazıda ise kendimize ait özel ethereum blockchain oluşturup işin pratiğine girmeye başlayacağız. Öncelikle ethereum blockchain oluşturmamızda tüm işi yüklenen Geth isimli bir CLI(Command Line Interface) aracı ile başlayalım.  
 
 Geth, go diliyle yazılmış bir uygulamadır ve ethereum blockchain üzerinde bir çok işlem yapabilmemize olanak sağlar. Geth ile ethereum üzerinde gerçekleştirilebilecek neler var sorusuna; Mandecilik, para transferleri, smart contract işlemleri, blokların sorgulanması gibi bir çok işlem yanıtı verilebilir. Geth gerçek ethereum ağına bağlı veya test ethereum ağınızda çalıştırılabilir. Bu yazıda geth ile test ethereum blockchain’imizi oluşturacağız.   
 
