@@ -113,7 +113,7 @@ Publish edilen serivsimize erişim(consume) için c#, python gibi güncel diller
 
 
 
-(https://github.com/enginunal/ConsumeLuisConsoleApp)
+[https://github.com/enginunal/ConsumeLuisConsoleApp](https://github.com/enginunal/ConsumeLuisConsoleApp)
 
 
 
