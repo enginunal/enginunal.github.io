@@ -15,7 +15,7 @@ VM’ler büyük ve hantal yapılardır, deploy(yazılım yayınlama) gereken du
 Container, yazılımın paylaşılan bir işletim sisteminde izoleli olarak çalışabilen bir biçimde paketlenmesinin bir yoludur. VM'lerin aksine, container bir işletim sistemi paketlemez; yalnızca yazılımı çalıştırmak için gereken kütüphaneler ve ayarlara ihtiyaç vardır. Bu, yazılımın nerede konuşlandırıldığına bakılmaksızın yazılımın daima aynı şekilde çalışacağını garanti eder.
 Container teknolojisi ile uygulamaların deploy edilmesi çok daha kolay ve VM’e göre çok çok hızlıdır. Continuous Integration gibi yazılım geliştirme süreçlerinde geliştiricilerin otomasyona bağladığı derleme ve test süreci sonrasında yayın süreci gelmektedir, yayın(deployment) sürecinin sorunsuz gerçekleşmesi çok önemlidir. Üretilen ve test edilen bir yazılımın kullanıcının deneyimine sunulma aşamasında kullanıcının işlerini kesintiye uğratmadan deployment tamamlanmalı ve bu işlemler hatasız gerçekleşmelidir. Container’lar bu alanda da önemli kolaylık getirmiştir ve kullanımları yaygınlaşmaktadır.
 
-Bu konuyla ilgili daha detay için : https://www.docker.com/what-docker#/overview/
+Bu konuyla ilgili daha detay için : [docker web sitesi](https://www.docker.com/what-docker#/overview/)
 
 
 ## Docker
@@ -28,56 +28,55 @@ Docker, yukarıda anlattığım container paltformu geliştiricisi bir firmadır
 
 Docker denemelerinizi yapmanın en kolay yolu yine Docker’ın açık kaynaklı projesi kitematic uygulamasıdır. Bu uygulama ile görsel arabirim kullanarak ve herhangi bir komut yazma gereği olmadan Docker engine kurabilir ve container indirip kullanabilirsiniz. Uygulamanın sitesinden Docker Toolbox indirerek işleme başlıyoruz.
 
-Kitematic sitesi : https://kitematic.com/
+Kitematic sitesi : [https://kitematic.com/](https://kitematic.com/)
 
-![image](https://3.bp.blogspot.com/-rf9t0pMDjXo/WdzjPhwu3iI/AAAAAAAAAZ4/sKRrkV79o34yYxn1d2AhHnshCouVFxXowCK4BGAYYCw/s1600/1.jpg)
+![image](/images/DockerMongoDB/1.jpg)
 
 
 
 Kurulum işlemine devam edip gereken seçenekleri seçiyoruz.
 
 
-![image](https://1.bp.blogspot.com/-Z8fFevYp3j4/WdzjU6FnljI/AAAAAAAAAaA/VUE5SwFBYGIMIn_xayNINrd6rawmpfKiQCK4BGAYYCw/s1600/2.jpg)
+![image](/images/DockerMongoDB/2.jpg)
 
 
 Kurulum tamamlandıktan sonra uygulamanın kısayollları oluşur.
 
 
-![image](https://1.bp.blogspot.com/-MHUSflZKaGk/WdzjX4abp0I/AAAAAAAAAaI/h3VAkG3pescQjnhHahPBcXSWTeSPF0PKgCK4BGAYYCw/s1600/3.jpg)
+![image](/images/DockerMongoDB/3.jpg)
 
 
 
 Docker Quickstart Terminal’i başlatıyoruz ve gereken ayarlamaları uygulama yapıyor. Aşağıdaki gibi bir uyarı alındığında
 
 
-![image](https://2.bp.blogspot.com/-o3ZsMST3fVM/Wdzjb7wQgmI/AAAAAAAAAaQ/U9HnJ8C-htYnwS36AjHshu-xwP4SxeVXACK4BGAYYCw/s1600/4.jpg)
+![image](/images/DockerMongoDB/4.jpg)
 
 
-
-Bilgisayarınızın BIOS ayarlarından VT-X/AMD-v tanımlarını aktif yapmanız gerekir.
+Windows'a Docker kurabilmek için öncelikle bir Virtual Machine(VM) yüklemesi gerekiyor, bunun için de öncelikle Oracle VirtualBox VM yüklemeye başlıyor. Bu işlemin başarılı gerçekleşebilmesi için bilgisayarınızın BIOS ayarlarından VT-X/AMD-v tanımlarını aktif yapmanız gerekir. 
 Bununla ilgili bir yazı:
 
-https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/
+[link](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/)
 
 
 Devamında işlemler tamamlandıktan sonra Kitematic uygulamasını açıyoruz ve docker hesabımızla giriş yapıyoruz.
 
 
-![image](https://4.bp.blogspot.com/-0fniXhZNHJI/Wdzjjolf2aI/AAAAAAAAAaY/NgXMa_9DHlQx1AQ0ugUmOteqnFuG6jYrwCK4BGAYYCw/s1600/6.jpg)
+![image](/images/DockerMongoDB/6.jpg)
 
 
 
 İşin büyük bölümü bitti. Bu ekrana ulaştıysanız artık sadece bir container beğenip bunu indirip denemelerinizi yapabilirsiniz. Ekrandaki container listesinden bir container arayıp bulduktan sonra CREATE yaparak container’ın indirilmesini başlatıyoruz.
 
 
-![image](https://1.bp.blogspot.com/-tZoQY8YIF9w/WdzjmlSMqpI/AAAAAAAAAag/JZ2iXSUQZiY3vQgRJoOeFeKUXSCNRRnWACK4BGAYYCw/s1600/7.jpg)
+![image](/images/DockerMongoDB/7.jpg)
 
 
 
 İndirme işlemi tamamlandığında container kuruluyor ve işlem tamamlandı.
 
 
-![image](https://3.bp.blogspot.com/-JxFV9PxQ0-s/WdzjpAekyoI/AAAAAAAAAao/o8-IrWxWBk0WNW_miuGq3bsRRrmmthY-QCK4BGAYYCw/s1600/8.jpg)
+![image](/images/DockerMongoDB/8.jpg)
 
 
 
@@ -92,33 +91,33 @@ Ekrandan görüldüğü üzere nginx container’ımız kuruldu ve kullanıma ha
 Kitematic uygulamasından New ile yeni bir container arama sayfası açarak mongo kelimesi ile arama yapıp ilk gelen ve official olan mongo container Create edilir.
 
 
-![image](https://2.bp.blogspot.com/-3lyXF6ZPRRc/WdzjusBhdUI/AAAAAAAAAaw/s_w_i46dj0wPpmiD5bk59JXoGuwawPXewCK4BGAYYCw/s1600/9.jpg)
+![image](/images/DockerMongoDB/9.jpg)
 
 
 
 İndirme ve oluşturma işlemi tamamlandığında container üzerine tıklandığında aşağıdaki gibi bir ekran gelecektir.
 
 
-![image](https://3.bp.blogspot.com/-MJZINV3rZTA/Wdzjy4yFyxI/AAAAAAAAAa4/aLkB8b-9fSIg_zLnRT6kvFqn18kYOWk5wCK4BGAYYCw/s1600/10.jpg)
+![image](/images/DockerMongoDB/10.jpg)
 
 
 
 Böylece mongodb documentdb container’ımız kullanıma hazır. Devamında çalışan mongodb veritabanımıza veri eklemek ve incelemek isteyeceğiz.
 Bunun en kolay yolu MongoDB Compass uygulaması ile yapmak olacaktır.
 
-Uygulamanın adresi : https://www.mongodb.com/products/compass/
+Uygulamanın adresi : [mongodb compass](https://www.mongodb.com/products/compass/)
 
 MongoDB Compass uygulamasını indirip açılışta bize sorulan IP adresi ve Port bilgilerini container’ımızdaki değerler olarak giriyoruz. Bu örnekte IP adresi 192.168.99.100 ve port 32769 olarak geçmekte yani bu değerler MongoDB Compass login ekranına girilir.
 
 
-![image](https://1.bp.blogspot.com/-xvQYi6VEoM0/Wdzj1xSPohI/AAAAAAAAAbA/YJm_T2rBeEYGzrHYD8_htvuzm2TqNTdngCK4BGAYYCw/s1600/11.jpg)
+![image](/images/DockerMongoDB/11.jpg)
 
 
 
 Login edildikten sonra veritabanımıza erişip yeni database, collection ve document oluşturup kaydediyoruz ve bu şekilde mongodb veritabanını kullanabilir noktaya geliyoruz.
 
 
-![image](https://4.bp.blogspot.com/-3vfbgFHdlhs/Wdzj44KyGfI/AAAAAAAAAbI/FNO7w-c7Y6AUPDqNdLRZmMcw_9MPW5CmwCK4BGAYYCw/s1600/12.jpg)
+![image](/images/DockerMongoDB/12.jpg)
 
 
 
@@ -128,7 +127,7 @@ Bu noktaya gelene kadar gayet kolay araçlar ile hiç komut satırı veya kodlam
 Bu container’a C# ile erişen ve veri alıp atan bir kod örneğini github repository olarak yayınladım meraklı arkadaşlar inceleyebilirler.
 
 
-Github repository : https://github.com/enginunal/MongoDBSimpleSample/
+Github repository : [https://github.com/enginunal/MongoDBSimpleSample/](https://github.com/enginunal/MongoDBSimpleSample/)
 
 
 
