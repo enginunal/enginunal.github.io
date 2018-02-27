@@ -47,7 +47,7 @@ Elde edilen bu TP,TN,FP,FN sayıları ile Confusion Matrix ismi verilen bir matr
 
 Örnek Confusion Matrix:
 
-![Image](https://1.bp.blogspot.com/-UYkYLsH5xxw/WdIna1UNUcI/AAAAAAAAAXc/eyNxA_xbmgMHeNYAlCmNNmclAcZhFGM6gCK4BGAYYCw/s320/confusionmatrix.jpg)
+![Image](/images/YapayZekaOgrenmeTeknikleri/confusionmatrix.jpg)
 
 
 Confusion matrix kullanılarak hesaplanan performans ölçümleri şunlardır:
@@ -77,7 +77,7 @@ FPR  = FP / (FP + TN)
 
 Örnek ROC Eğrisi:
 
-![Image](https://1.bp.blogspot.com/-9wWWogTvjyQ/WdInvOLgCuI/AAAAAAAAAXk/ofFmNikdQ6woQkweSZPj8BueAIPAzjWPgCK4BGAYYCw/s1600/ROCEgrisi.jpg)
+![Image](/images/YapayZekaOgrenmeTeknikleri/ROCEgrisi.jpg)
 
 
 ROC eğrisinin altında kalan alana ise AUC(Area Under The ROC) denir. Eğri altındaki alan veya AUC, modelin ne kadar iyi öngöreceğini gösteren bir göstergedir. Genellikle, AUC alanı ne kadar geniş ise o kadar iyidir. Grafiğin sol üst köşesine mümkün olduğunca yakın olunmak istenir.
