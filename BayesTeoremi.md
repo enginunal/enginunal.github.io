@@ -8,7 +8,7 @@ Olasılıkla ilgili daha önceden bilgi sahibi değilseniz olasılık yazımda b
 
 Bayes teoremi, 18. yüzyıl İngiliz matematikçisi Thomas Bayes'in adını verdiği koşullu olasılığı belirlemek için kullanılan matematiksel bir formüldür. 
 
-![image](https://2.bp.blogspot.com/-EfO3nX2Zp50/WfsDvW0z-OI/AAAAAAAAAbg/1VU_cCEzA_0K5E4hXgXuQSaNtl9_x9HEwCK4BGAYYCw/s1600/formula.jpg)  
+![image](/images/Bayes/formula.jpg)  
 
 
 <code>P(A|B)</code> = B olayı gerçekleştiğinde A olayının gerçekleşme olasılığı  
