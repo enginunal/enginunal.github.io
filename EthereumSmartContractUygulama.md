@@ -57,11 +57,11 @@ geth --datadir "c:\myEth" --nodiscover --rpc --rpcport "7545" --rpccorsdomain "*
 Bu yazının devamında ganache kullanacağım için işlemlerimize onunla devam edelim. Ganache kurulduktan sonra ilk açılışta 
 10 hesap ve hepsinde 100 ETH tanımlı olarak gelmekte bunları test işlemlerimizde kullanacağız. İlk aşamada tek blok(genesis) içeren blockchain'i oluşturur ve RPC server'ı başlatır ve bağlanılmaya hazır hale gelir.
 
-![image](/images/SmartContractGiris/4.jpg)  
+![image](/images/SmartContractGiris/4.jpeg)  
 
-![image](/images/SmartContractGiris/5.jpg)  
+![image](/images/SmartContractGiris/5.jpeg)  
 
-![image](/images/SmartContractGiris/6.jpg)  
+![image](/images/SmartContractGiris/6.jpeg)  
 
 
 
