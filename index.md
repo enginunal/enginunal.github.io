@@ -1,9 +1,15 @@
 # Hoşgeldiniz
 
-Bu sayfada yazılım dünyası ve yapay zeka ve yenilikler ile ilgili konularda Türkçe yazılarımı bulabilirsiniz. 
+Bu sayfada son zamanlarda ilgi duyduğum konularla ilgili Türkçe yazılarımı bulabilirsiniz. 
 
 
 Konulara göre yazılarım :
+
+### Blockchain
+* [Bitcoin ve Blockchain Nedir? Nasıl Çalışır?](https://enginunal.github.io/BitcoinAndBlockchain)
+* [Ethereum Blockchain ve Smart Contracts Nedir?](https://enginunal.github.io/EthereumGiris)
+* [Kendi Ethereum Blockchain’imizi Yapıyoruz](https://enginunal.github.io/EthereumBlockchainYapimi)
+* [Ethereum Smart Contract Giriş](https://enginunal.github.io/EthereumSmartContractUygulama)
 
 
 ### Yapay Zeka
@@ -13,18 +19,14 @@ Konulara göre yazılarım :
 * [Discriminative ve Generative Modeller](https://enginunal.github.io/DiscriminativeVeGenerative)
 
 
-### Docker ve MongoDB
-* [Container Nedir? Docker Nedir? MongoDB Container Kurulum Örneği](https://enginunal.github.io/DockerMongoDB)
-
 ### Bulut
 * [Bulut Mimarisinin Temelleri](https://enginunal.github.io/BulutTemelleri)
 * [Azure Functions İle HttpTrigger Örneği](https://enginunal.github.io/AzureFunctionHttpTrigger)
 
-### Blockchain
-* [Bitcoin ve Blockchain Nedir? Nasıl Çalışır?](https://enginunal.github.io/BitcoinAndBlockchain)
-* [Ethereum Blockchain ve Smart Contracts Nedir?](https://enginunal.github.io/EthereumGiris)
-* [Kendi Ethereum Blockchain’imizi Yapıyoruz](https://enginunal.github.io/EthereumBlockchainYapimi)
-* [Ethereum Smart Contract Giriş](https://enginunal.github.io/EthereumSmartContractUygulama)
+
+### Docker ve MongoDB
+* [Container Nedir? Docker Nedir? MongoDB Container Kurulum Örneği](https://enginunal.github.io/DockerMongoDB)
+
 
 ### Matematik
 * [Olasılık Kuralları](https://enginunal.github.io/OlasilikKurallari)
