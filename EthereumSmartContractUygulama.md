@@ -55,15 +55,107 @@ geth --datadir "c:\myEth" --nodiscover --rpc --rpcport "7545" --rpccorsdomain "*
 ```
 
 Bu yazının devamında ganache kullanacağım için işlemlerimize onunla devam edelim. Ganache kurulduktan sonra ilk açılışta 
-10 hesap ve hepsinde 100 ETH tanımlı olarak gelmekte bunları test işlemlerimizde kullanacağız. İlk aşamada tek blok(genesis) içeren blockchain'i oluşturur ve RPC server'ı başlatır ve bağlanılmaya hazır hale gelir.
+10 hesap ve hepsinde 100 ETH tanımlı olarak gelmekte bunları test işlemlerimizde kullanacağız.  
 
 ![image](/images/SmartContractGiris/4.jpeg)  
+  
+İlk aşamada tek blok(genesis) içeren blockchain'i oluşturur   
 
 ![image](/images/SmartContractGiris/5.jpeg)  
 
+ RPC server'ı başlatır ve bağlanılmaya hazır hale gelir  
+ 
 ![image](/images/SmartContractGiris/6.jpeg)  
 
+Şimdi Remix IDE'yi açıp merhaba.sol isminde bir dosya yaratalım ve içerisine örnek olarak yazdığım kodu ekleyelim.  
+Kod basit olarak iki sayının toplamını alan veya toplamdan bir azaltan metodlar sunuyor ve hesaplanan bu toplamı saklıyor. İstendiğinde sakladığı bu toplamı döndüren metod ile toplam değeri alınabiliyor. Bununla birlikte ilk yaratma aşamasında (constructor) set edilen mesaj değerini istenildiğinde dönen bir metoda sahip. Anlaşılması kolay ve oldukça kısa bir kod örneği.  
 
+```
+pragma solidity ^0.4.20;
+
+contract Merhaba {
+    int toplam = 0;
+    string mesaj;
+
+    //constructor
+    function Merhaba(string baslangicMesaji) public
+    {
+        mesaj = baslangicMesaji;
+    }
+    
+    function Topla(int a, int b) public returns (int) {
+      toplam = a + b;
+      return toplam;
+    }
+    
+    function BirAzalt() public 
+    {
+        toplam--;
+    }
+     
+    function ToplamiGetir() public constant returns (int) 
+    {
+        return toplam;
+    } 
+    
+    function MesajiGetir() public constant returns (string)
+    {
+        return mesaj;
+    }
+
+}
+```
+Remix'te Run Tab'ına geçip Environment olarak Web3 provider seçiyoruz ve blockchain'imizin rpc bilgilerini çıkan ekrana giriyoruz.
+
+![image](/images/SmartContractGiris/8.jpeg)  
+
+Bu işlemden sonra remix ide, blockchain'imize bağlantıyı sağlıyor ve Environment değerinin solundaki networkId(5777) sayısının bizim blockchain'imize ait değer olması ve Account değerinin blockchain'imizdeki ilk account değeri(0xeC10c3...) ile aynı olduğu gözlemlenebilir.
+
+![image](/images/SmartContractGiris/9.jpeg)  
+
+
+Merhaba isimli Smart Contract'ımıza ilk mesaj değeri olarak "baslasin !" değerini vererek Create ediyoruz. Ve Smart Contract transaction olarak blockchain'imize gönderiliyor. Böylece ilk transaction Blok 1 içerisine ekleniyor.  
+
+![image](/images/SmartContractGiris/11.jpeg)  
+
+![image](/images/SmartContractGiris/12.jpeg)  
+
+![image](/images/SmartContractGiris/13.jpeg)  
+
+![image](/images/SmartContractGiris/14.jpeg)  
+
+Ekran çıktılarında görüldüğü üzere yaratılan Smart Contract transaction olarak işlendi ve Blok içerisinde yerini aldı. Transaction hash değeri 0xbc0bb... remix'te görülen transaction'ımızın hash değeri ile aynı.
+
+![image](/images/SmartContractGiris/15.jpeg)  
+
+Şimdi Topla metodumuza 9,8 yazarak toplama işlemini gerçekleştirelim. Bu işlem toplam ismini verdiğimiz durum değişkenimizin değerini değiştireceğinden bir transaction olarak blockchain'e eklenecektir. State variable(durum değişkeni) değişmediği durumda ise (örneğin ToplamGetir çağrımı gibi) transaction üretilmez.
+
+![image](/images/SmartContractGiris/16.jpeg)  
+
+![image](/images/SmartContractGiris/17.jpeg)  
+
+ToplamiGetir metodunun çağrımı  
+
+![image](/images/SmartContractGiris/18.jpeg)  
+
+Yine aynı şekilde BirAzalt metodu da toplam durum değişkenini değiştireceğinden transaction oluşturulur ve 
+blockchain'e gönderilir.  
+
+![image](/images/SmartContractGiris/19.jpeg)  
+
+![image](/images/SmartContractGiris/20.jpeg)  
+
+Burada dikkatinizi çekmek istediğim bir nokta ise contract adresimizin tüm bu işlemler olurken değişmemesidir. 
+Contract adresi ilk yaratma anında belirlenir ve değişmez. 
+Smart Contract'lar birbirleri ile etkileşime girebilir yani bir contract diğerini çağırabilir, ona para gönderebilir.
+
+
+Son olarak aynı Smart Contract kodu ile "ikinci baslasin !" ön değerini vererek yeni bir contract yaratabiliriz.  
+Bu durumda önceki contract adresinden farklı bir adreste ve tamamen bağımsız olarak bir contract yaratacaktır.
+
+![image](/images/SmartContractGiris/22.jpeg)  
+
+![image](/images/SmartContractGiris/23.jpeg)  
 
   
 
