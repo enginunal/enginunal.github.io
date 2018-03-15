@@ -1,7 +1,7 @@
 
 [Ana Sayfa](https://enginunal.github.io/)
 
-# Ethereum Blockchain ve Smart Contracts Giriş
+# Ethereum Blockchain ve Smart Contracts Nedir?
 
 
 Önceki yazımı okumadıysanız ve blockchain konusunda bilgi sahibi değilseniz öncelikle [o yazıdan](https://enginunal.github.io/BitcoinAndBlockchain) başlamanızı öneririm.  
