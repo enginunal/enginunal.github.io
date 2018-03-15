@@ -157,7 +157,8 @@ Bu durumda önceki contract adresinden farklı bir adreste ve tamamen bağımsı
 
 ![image](/images/SmartContractGiris/23.jpeg)  
 
-  
 
 
+
+Engin ÜNAL
 
