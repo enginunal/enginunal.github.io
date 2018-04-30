@@ -17,17 +17,17 @@ Bu gibi özellikler detaya inilerek artırılabilir. Adım adım gidersek Bitcoi
 
 ## Blockchain  
 
-Blockchain bir veritabanıdır ve bu veritabanının birden çok bilgisayarda kopyası vardır ve bu bilgisayarlar P2P ağı ile birbirine bağlıdır. Yani bir merkez veya sunucu yoktur. Tüm bağlı bilgisayarlar sürekli olarak Blockchain veritabanının güncel kopyasını kendisinde tutar. Yani ağa bağlı her bilgisayar başlangıçtan itibaren tüm işlemleri içeren tam kopyayı saklar.
+Blockchain en temel olarak bir veritabanının üzerinde çalışan protokoldür ve birbirine doğrudan bağlı bilgisayarlar(P2P ağı) aracılığı ile bu veritabanının kopyası tutulmaktadır. Yani bir merkez veya sunucu yoktur. Tüm bağlı bilgisayarlar sürekli olarak veritabanının güncel kopyasını kendisinde tutar. Yani ağa bağlı her bilgisayar başlangıçtan itibaren tüm işlemleri içeren tam kopyayı saklar.
 Aslında blok zinciri konusunda buraya yaptığım tarif dağıtılmış defter teknolojisi ile aynıdır. Dağıtılmış Defter Teknolojisi (Distributed Ledger Technologies) veya DLT mimarisinde de defter kayıtları dağıtılmış yapıda tutulmaktadır. Bitcoin de Blockchain defterinde işlemleri bloklar halinde ve dağıtılmış bilgisayarlarda açık olarak tutmaktadır. Fakat bundan sonraki anlatımlar DLT ile Blockchain’in farkını ortaya koymaktadır.  
 
 Bu veritabanı nasıl bir yapıdadır? Veriler nasıl tutulur?  
 
-Blockchain veritabanı adı üstünde blok-zinciri, birbirine bağlanmış bloklardan oluşmaktadır. Tüm veriler bu bloklar içinde tutulmaktadır. Burada kolay anlaşılması açısından blokları tablo gibi de düşünebiliriz. Bloklar belli sayılarda işlemi barındırırlar ve her blok kendisinden önceki bloğa bağlanarak blok zincirine eklenmiş olur. Zincirin başlangıcı olan bloğa genesis block ismi verilir. İlk blok herhangi bir bloğa bağlı değildir.  
+Blockchain adı üstünde blok-zinciri, birbirine bağlanmış bloklardan oluşmaktadır. Tüm veriler bu bloklar içinde tutulmaktadır. Burada kolay anlaşılması açısından blokları tablo gibi de düşünebiliriz. Bloklar belli sayılarda işlemi barındırırlar ve her blok kendisinden önceki bloğa bağlanarak blok zincirine eklenmiş olur. Zincirin başlangıcı olan bloğa genesis block ismi verilir. İlk blok herhangi bir bloğa bağlı değildir.  
 
 Blokların bağlantıları bilgisayar yazılım eğitimlerinde anlatılan veri yapıları konu başlığındaki bağlı liste(linked list) veri yapısına benzer tek farkı tersine bağlıdır(back-linked list). Yani bir blok kendisinden önce gelen bloğun adresini kendi içinde saklar. 
-Tanımı biraz daha özelleştirirsek Blockchain veritabanı birbirine kronolojik olarak bağlı ve tüm işlemlerin tutulduğu yapılar olan bloklardan oluşur. Bu bloklar madenciler(miner) tarafından bir dizi kriptografik ve matematiksel işlemle onaylanır, paketlenir ve zincire eklenir.   
+Tanımı biraz daha özelleştirirsek Blockchain birbirine kronolojik olarak bağlı ve tüm işlemlerin tutulduğu yapılar olan bloklardan oluşur. Bu bloklar madenciler(miner) tarafından bir dizi kriptografik ve matematiksel işlemle onaylanır, paketlenir ve zincire eklenir.   
 
-Blockchain veritabanının uçtan uca birbirine bağlı bilgisayarlar ile bir ağ yapısında güncel olarak tutulduğundan bahsetmiştim, bu sayede blok zincirinin tek merkezde tutulmasına kıyasla daha iyi korunacağı açıktır. Dünyanın bir bölgesindeki bilgisayarların aynı anda çökmesi söz konusu olsa bile bu yapı nedeniyle sağ kalan bilgisayarlar işlemlerin devam etmesini sağlayacaklardır.  
+Blockchain veri yapılarının uçtan uca birbirine bağlı bilgisayarlar ile ağ mimarisinde güncel olarak tutulduğundan bahsetmiştim, bu sayede blok zincirinin tek merkezde tutulmasına kıyasla daha iyi korunacağı açıktır. Dünyanın bir bölgesindeki bilgisayarların aynı anda çökmesi söz konusu olsa bile bu yapı nedeniyle sağ kalan bilgisayarlar işlemlerin devam etmesini sağlayacaklardır.  
 
 ![image](/images/BitcoinVeBlockchain/1.png)  
 
