@@ -446,7 +446,7 @@ Enter password:
 Cluster'ımızın tanımlarını yaptık ve node'larımız eklendi. Artık sistemin çalıştığını test edebiliriz.  
 
 
-###### Galera Cluster Test İşlemi  
+##### Galera Cluster Test İşlemi  
 
 vboxeul node'unda bir veritabanı yaratıp vboxeul1 node'undan bunu gözlemleyeceğiz.  
 
