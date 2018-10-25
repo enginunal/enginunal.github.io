@@ -5,6 +5,18 @@ Bu sayfada son zamanlarda ilgi duyduğum konularla ilgili Türkçe yazılarımı
 
 Konulara göre yazılarım :
 
+### SCM/VCS -- CI/CD Süreçleri -- Tasarım Kalıpları (Design Patterns)
+* [Repository ve Unit Of Work Tasarım Kalıbı ve Uygulanması](https://enginunal.github.io/RepositoryVeUnitOfWork)  
+* [C# İle Object Oriented Programming Temelleri](https://enginunal.github.io/OOPTemelleri)  
+* [Git Nedir?](https://enginunal.github.io/GitNedir)
+
+
+### Clustering, Database ve Docker 
+* [Container Nedir? Docker Nedir? MongoDB Container Kurulum Örneği](https://enginunal.github.io/DockerMongoDB)
+* [Galera İle Database Clustering (Veritabanı Kümeleme) Ve MariaDB](https://enginunal.github.io/DatabaseClusterAndMariaDB)
+* [Docker Container Ve Swarm Mode](https://enginunal.github.io/DockerContainerVeSwarmMode)
+
+
 ### Blockchain
 * [Bitcoin ve Blockchain Nedir? Nasıl Çalışır?](https://enginunal.github.io/BitcoinAndBlockchain)
 * [Ethereum Blockchain ve Smart Contracts Nedir?](https://enginunal.github.io/EthereumGiris)
@@ -24,21 +36,12 @@ Konulara göre yazılarım :
 * [Azure Functions İle HttpTrigger Örneği](https://enginunal.github.io/AzureFunctionHttpTrigger)
 
 
-### Clustering, Database ve Docker 
-* [Container Nedir? Docker Nedir? MongoDB Container Kurulum Örneği](https://enginunal.github.io/DockerMongoDB)
-* [Galera İle Database Clustering (Veritabanı Kümeleme) Ve MariaDB](https://enginunal.github.io/DatabaseClusterAndMariaDB)
-* [Docker Container Ve Swarm Mode](https://enginunal.github.io/DockerContainerVeSwarmMode)
-
-
 ### Matematik
 * [Olasılık Kuralları](https://enginunal.github.io/OlasilikKurallari)
 * [Bayes Teoremi](https://enginunal.github.io/BayesTeoremi)
 
 
-### CI/CD Süreçleri ve Tasarım Kalıpları (Design Patterns)
-* [Repository ve Unit Of Work Tasarım Kalıbı ve Uygulanması](https://enginunal.github.io/RepositoryVeUnitOfWork)  
-* [C# İle Object Oriented Programming Temelleri](https://enginunal.github.io/OOPTemelleri)  
-* [Git Nedir?](https://enginunal.github.io/GitNedir)
+
 
 
 
