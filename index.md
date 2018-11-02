@@ -5,10 +5,11 @@ Bu sayfada son zamanlarda ilgi duyduğum konularla ilgili Türkçe yazılarımı
 
 Konulara göre yazılarım :
 
-### SCM/VCS -- CI/CD Süreçleri -- Tasarım Kalıpları (Design Patterns)
+### SCM/VCS -- CI/CD -- Design Patterns -- Agile -- DevOps
 * [Repository ve Unit Of Work Tasarım Kalıbı ve Uygulanması](https://enginunal.github.io/RepositoryVeUnitOfWork)  
 * [C# İle Object Oriented Programming Temelleri](https://enginunal.github.io/OOPTemelleri)  
 * [Git Nedir?](https://enginunal.github.io/GitNedir)
+* [Lean, Agile ve DevOps Süreci](https://enginunal.github.io/Lean_Agile_Devops_Sureci)
 
 
 ### Clustering, Database ve Docker 
