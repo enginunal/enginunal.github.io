@@ -84,7 +84,7 @@ tüm çalışanların kuruma aidiyet duyguları gelişir.
 
 ## Çevik Yazılım Geliştirme(Agile Software Development)
 
-![image](/images/LeanAgileDevops/agile-lifecycle.png)
+![image](/images/LeanAgileDevOps/agile-lifecycle.png)
 
 
 Şubat 2001 yılında 17 yazılım gellştiricinin Utah’ta düzenledikleri yazılım geliştirme metodları 
@@ -136,7 +136,7 @@ aşamasına bırakmak yerine hemen ortaya çıkarır.
 
 ## Yalın Prensipleri İle Yazılım Geliştirme(Lean Software Development)
 
-![image](/images/LeanAgileDevops/lean.jpg)
+![image](/images/LeanAgileDevOps/lean.jpg)
 
 
 Tom Poppendieck ve Mary Poppendieck tarafından kaleme alınmış bir kitap(Lean Software Development) ile 
@@ -249,7 +249,7 @@ prosese dahil etmek, Agile ve Lean felsefesinin özünde yer almaktadır.
 
 ## DevOps
 
-![image](/images/LeanAgileDevops/devops.png)
+![image](/images/LeanAgileDevOps/devops.png)
 
 DevOps metodolojisini, Patrick Debois’in 2009 yılındaki Belçika devopsdays konferansındaki 
 adlandırması ile başlatıp software Development(Dev) ve Information Technology Operations(Ops) kısaltmalarının birleşimidir 
