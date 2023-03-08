@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: enginunal.github.io
+Token: 3982e7c8e3980de110a5cc365d2e30aef77b5cb69dbc8ac34cf2272ae12e0b1c
